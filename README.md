@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+this is project 16 of tripleten. ready to start!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
