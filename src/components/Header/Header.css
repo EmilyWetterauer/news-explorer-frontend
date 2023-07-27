@@ -1,0 +1,108 @@
+.header {
+  /* background-color: green; */
+  width: 1280px;
+  /* width: 1440px; */
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* margin: 0 auto; */
+  /* margin-left: 0px; */
+  /* margin-right: 0px; */
+  /* border-bottom: solid #d1d2d6 1px; */
+  max-width: 100%;
+}
+
+.header__leftSideContainer {
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  align-items: center;
+  display: flex;
+  height: 80px;
+}
+
+.header__title {
+  /* position: relative; */
+  /* top: 50%; */
+  font-weight: 500;
+  font-size: 18px;
+  color: #1a1b22;
+}
+
+.header__rightSideContainer {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: auto;
+  /* margin: 0; */
+}
+
+.header__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  /* height: 24px; */
+  height: 80px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1a1b22;
+  /* background-color: purple; */
+  margin: 0;
+}
+
+.header__savedArticles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  /* height: 24px; */
+  height: 80px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1a1b22;
+  /* background-color: green; */
+  text-align: center;
+  align-items: center;
+  /* line-height: 24px; */
+  margin: 0;
+  margin-left: 40px;
+  border-bottom: 3px solid #1a1b22;
+}
+.header__profileButton {
+  width: 112px;
+  height: 48px;
+  border: solid #1a1b22 1px;
+  background-color: #fff;
+  color: #1a1b22;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  /* background-color: aqua; */
+  margin-left: 40px;
+}
+
+.header__profileButtonText {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header__signInButton {
+  width: 176px;
+  height: 48px;
+  border: solid #000 1px;
+  border-radius: 50px;
+}
+
+.header__signInButtonText {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
