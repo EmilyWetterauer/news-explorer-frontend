@@ -1,0 +1,12 @@
+.main__wrapper {
+  width: 100%;
+}
+
+.main__backgroundImage {
+  background-image: url("../../images/backgroungCellPhoneImage.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: fit-content;
+}

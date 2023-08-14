@@ -1,0 +1,56 @@
+.searchForm__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 576px;
+}
+
+.searchForm__headerQuestion {
+  height: 128px;
+  width: 608px;
+  color: #fff;
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+.searchForm__statement {
+  height: 24px;
+  width: 608px;
+  color: #fff;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.searchForm__searchBarWrapper {
+  margin-bottom: 20px;
+}
+.searchForm__searchBar {
+  width: 608px;
+  height: 64px;
+  border-radius: 30px;
+  padding: 0px 0px 0px 20px;
+  border: none;
+}
+
+.searchForm__searchBarButton {
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px;
+  width: 168px;
+  height: 64px;
+  background-color: #2f71e5;
+  border: none;
+  margin-left: -168px;
+}
+
+.searchForm__searchBarButton:hover {
+  background-color: #347eff;
+  cursor: pointer;
+  color: #fff;
+}
+
+.searchForm__searchBarButton:active {
+  background-color: #2a65cc;
+  color: #fff;
+}

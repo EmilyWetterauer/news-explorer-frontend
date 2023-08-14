@@ -1,0 +1,83 @@
+.popupWithForm__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.popupWithForm__form.small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 430px;
+  height: 383px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.popupWithForm__form.medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 430px;
+  height: 458px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.popupWithForm__title {
+  width: 360px;
+  height: 32px;
+  color: #1a1b22;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.popupWithForm__closeButton {
+  display: flex;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}
+
+.popupWithForm__closeButton:hover {
+  cursor: pointer;
+}
+
+.popupWithForm__submitButton {
+  width: 360px;
+  height: 64px;
+  background-color: #e6e8eb;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.popupWithForm__signInText {
+  width: 360px;
+  height: 20px;
+  text-align: center;
+  align-self: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.popupWithForm__SignInLink {
+  color: #2f71e5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.popupWithForm__SignInLink:hover {
+  cursor: pointer;
+}

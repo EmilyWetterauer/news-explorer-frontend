@@ -1,0 +1,19 @@
+.savedNews__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #f5f6f7;
+  flex-wrap: wrap;
+}
+
+.savedNews__newsCardsContainer {
+  display: flex;
+  justify-content: center;
+  width: 1420px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  flex-wrap: wrap;
+}

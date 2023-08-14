@@ -1,0 +1,138 @@
+.newsCard__cardContainer {
+  background-color: #fff;
+  height: 576px;
+  width: 400px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.newsCard__imageContainer {
+  height: 272px;
+  width: 400px;
+}
+
+.newsCardList__signInButton {
+  position: absolute;
+  margin-top: 0px;
+  top: 1px;
+  right: 44px;
+  z-index: 1;
+  width: 182px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.newsCard__imageSaveButtonContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsCard__imageSaveButton {
+  background-image: url("../../images/bookmark.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}
+
+.newsCard__imageSaveButton:hover {
+  background-image: url("../../images/Group\ 14.svg");
+  height: 40px;
+  width: 40px;
+}
+
+.newsCard__imageSaveButtonIsLiked {
+  background-image: url("../../images/bookmarkMarked.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}
+
+.newsCard__imageTrashCanButton {
+  background-image: url("../../images/trash.svg");
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  background-position: center;
+}
+
+.newsCard__keywordLabel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  width: 87px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.newsCard__keywordLableText {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.newsCard__image {
+  height: 272px;
+  width: 400px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: red;
+}
+
+.newsCard__textContainer {
+  height: 304px;
+  width: 400px;
+  margin-left: 20px;
+}
+
+.newsCard__dateText {
+  width: 149px;
+  height: 24px;
+  color: #b6bcbf;
+  font-weight: 400px;
+  font-size: 18px;
+}
+
+.newsCard__headerText {
+  width: 352px;
+  height: 60px;
+  font-weight: 400px;
+  font-size: 26px;
+  color: #1a1b22;
+}
+
+.newsCard__paragraphText {
+  width: 352px;
+  height: 110px;
+  font-weight: 400px;
+  font-size: 16px;
+  color: #1a1b22;
+}
+
+.newsCard__footerText {
+  width: 121px;
+  height: 20px;
+  font-weight: 700px;
+  font-size: 16px;
+  color: #b6bcbf;
+}

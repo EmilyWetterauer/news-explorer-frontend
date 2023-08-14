@@ -1,0 +1,53 @@
+.registerModal__emailLabel {
+  width: 360px;
+  height: 14px;
+  color: #2f71e5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.registerModal__emailField {
+  width: 360px;
+  height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  border-bottom: solid 2px #000;
+}
+
+.registerModal__passwordLabel {
+  width: 360px;
+  height: 14px;
+  color: #2f71e5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.registerModal__passwordField {
+  width: 360px;
+  height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  border-bottom: solid 2px #000;
+}
+
+.registerModal__userNameLabel {
+  width: 360px;
+  height: 14px;
+  color: #2f71e5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.registerModal__userNameField {
+  width: 360px;
+  height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  border-bottom: solid 2px #000;
+}

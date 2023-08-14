@@ -1,0 +1,45 @@
+import React from "react";
+
+import "./RegisterModal.css";
+
+import PopupWithForm from "../PopupWithForm/PopupWithForm";
+
+const RegisterModal = ({
+  onClose,
+  handleRegisterClick,
+  handleAlternateButtonClick,
+  handleSubmit,
+}) => {
+  return (
+    <PopupWithForm
+      title="Sign up"
+      buttonLabel="Sign up"
+      alternateButtonLabel="Sign in"
+      formSize="medium"
+      onClose={onClose}
+      handleAlternateButtonClick={handleAlternateButtonClick}
+      handleSubmit={handleSubmit}
+    >
+      <label className="registerModal__emailLabel">Email</label>
+      <input
+        className="registerModal__emailField"
+        placeholder="Email"
+        required
+      ></input>
+      <label className="registerModal__passwordLabel">Password</label>
+      <input
+        className="registerModal__passwordField"
+        placeholder="Password"
+        required
+      ></input>
+      <label className="registerModal__userNameLabel">Username</label>
+      <input
+        className="registerModal__userNameField"
+        placeholder="Username"
+        required
+      ></input>
+    </PopupWithForm>
+  );
+};
+
+export default RegisterModal;

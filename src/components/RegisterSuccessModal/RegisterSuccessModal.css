@@ -1,0 +1,48 @@
+.registerSuccessModal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.registerSuccessModal__container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 430px;
+  height: 182px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.registerSuccessModal__closeButton {
+  display: flex;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}
+
+.registerSuccessModal__title {
+  width: 350px;
+  font-weight: 900;
+  font-size: 24px;
+  color: #000;
+}
+
+.registerSuccessModal__signInLink {
+  color: #2f71e5;
+  font-size: 18px;
+  font-weight: 400;
+  width: 350px;
+}
+
+.registerSuccessModal__signInLink:hover {
+  cursor: pointer;
+}

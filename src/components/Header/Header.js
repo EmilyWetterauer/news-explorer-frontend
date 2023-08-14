@@ -1,28 +1,33 @@
+import React from "react";
+
 import "./Header.css";
 
-import icon from "../../images/Union.png";
+import { Link, useLocation } from "react-router-dom";
 
-const Header = ({ isLoggedIn }) => {
+import Navigation from "../Navigation/Navigation";
+
+const Header = ({ handleSignInButtonClick, isLoggedIn, handleLogout }) => {
+  const location = useLocation();
+
+  const isSavedNews = location.pathname === "/saved-news";
+
+  const header__titleClassName = isSavedNews
+    ? "header__titleSavedNews"
+    : "header__title";
+
   return (
-    <header className="header">
+    <header className="header__container">
       <div className="header__leftSideContainer">
-        <p className="header__title">NewsExplorer</p>
+        <Link to="/" className="homepageLinkNewsExplorer">
+          <p className={header__titleClassName}>NewsExplorer</p>
+        </Link>
       </div>
       <div className="header__rightSideContainer">
-        <p className="header__home">Home</p>
-        <p className="header__savedArticles">Saved Articles</p>
-        {isLoggedIn ? (
-          <button className="header__profileButton">
-            <span className="header__profileButtonText">Emma</span>
-            <span className="header__profileButtonIcon">
-              <img src={icon} alt="arrowImage" />
-            </span>
-          </button>
-        ) : (
-          <button className="header__signInButton">
-            <span className="header__signInButtonText">Sign In</span>
-          </button>
-        )}
+        <Navigation
+          handleSignInButtonClick={handleSignInButtonClick}
+          isLoggedIn={isLoggedIn}
+          handleLogout={handleLogout}
+        />
       </div>
     </header>
   );

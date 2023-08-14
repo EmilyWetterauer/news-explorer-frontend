@@ -1,0 +1,39 @@
+.nothingFound__container {
+  height: 374px;
+  width: 100%;
+  background-color: #f5f6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nothingFound__contentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nothingFound__image {
+  height: 82.5px;
+  width: 82.5px;
+}
+
+.nothingFound__header {
+  height: 30px;
+  width: 356px;
+  font-weight: 400px;
+  font-size: 26px;
+  color: #1a1b22;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.nothingFound__paragraphText {
+  height: 48px;
+  width: 226px;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #b6bcbf;
+}

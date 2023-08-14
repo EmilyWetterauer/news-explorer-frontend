@@ -1,0 +1,78 @@
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+}
+
+.footer__leftSideContainer {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b6bcbf;
+  width: 433px;
+  height: 22px;
+  margin-left: 100px;
+}
+
+.footer__rightSideContainer {
+  display: flex;
+  width: 433px;
+  justify-content: end;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: auto;
+}
+
+.footer_home {
+  color: #1a1b22;
+  font-weight: 400px;
+  font-size: 18px;
+  width: 49px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer_tripleTen {
+  color: #1a1b22;
+  font-weight: 400px;
+  font-size: 18px;
+  width: 82px;
+  height: 24px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.footer__githubIcon {
+  background-image: url("../../images/github.svg");
+  height: 24px;
+  width: 24px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.footer__facebookIcon {
+  background-image: url("../../images/fb.svg");
+  height: 24px;
+  width: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.homepageLinkHome {
+  text-decoration: none;
+}
+
+.tripleTenLink {
+  text-decoration: none;
+}
+
+.githubLink {
+  text-decoration: none;
+}
+
+.facebookLink {
+  text-decoration: none;
+}

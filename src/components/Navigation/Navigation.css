@@ -1,0 +1,124 @@
+.header__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 80px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  border-bottom: 3px solid #fff;
+}
+
+.header__homeSavedNews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 80px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1a1b22;
+  margin: 0;
+}
+
+.header__savedArticles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 80px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #b6bcbf;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.header__savedArticlesSavedNews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 80px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1a1b22;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  margin-left: 40px;
+  cursor: pointer;
+  border-bottom: 3px solid #1a1b22;
+}
+
+.header__profileButton {
+  width: 112px;
+  height: 48px;
+  border: solid #fff 1px;
+  background: none;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.header__profileButtonSavedNews {
+  width: 112px;
+  height: 48px;
+  border: solid #1a1b22 1px;
+  background: #fff;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.header__profileButtonText {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.header__profileButtonTextSavedNews {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1a1b22;
+}
+
+.header__signInButton {
+  width: 176px;
+  height: 48px;
+  border: solid #fff 1px;
+  border-radius: 50px;
+  background: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.header__signInButtonText {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.homepageLinkHome {
+  text-decoration: none;
+}
+
+.savedNewsLinkSavedArticles {
+  text-decoration: none;
+}

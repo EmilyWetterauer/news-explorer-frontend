@@ -1,0 +1,35 @@
+.signInModal__emailLabel {
+  width: 360px;
+  height: 14px;
+  color: #2f71e5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.signInModal__emailInput {
+  width: 360px;
+  height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  border-bottom: solid 2px #000;
+}
+
+.signInModal__passwordLabel {
+  width: 360px;
+  height: 14px;
+  color: #2f71e5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.signInModal__passwordInput {
+  width: 360px;
+  height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  border-bottom: solid 2px #000;
+}
