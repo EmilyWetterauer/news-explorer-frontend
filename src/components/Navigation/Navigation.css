@@ -5,6 +5,7 @@
   width: 68px;
   height: 80px;
   cursor: pointer;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #fff;
@@ -19,6 +20,7 @@
   width: 68px;
   height: 80px;
   cursor: pointer;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #1a1b22;
@@ -31,6 +33,7 @@
   justify-content: center;
   width: 178px;
   height: 80px;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #b6bcbf;
@@ -47,6 +50,7 @@
   justify-content: center;
   width: 178px;
   height: 80px;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #1a1b22;
@@ -85,12 +89,14 @@
 }
 
 .header__profileButtonText {
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #fff;
 }
 
 .header__profileButtonTextSavedNews {
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #1a1b22;
@@ -110,6 +116,7 @@
 }
 
 .header__signInButtonText {
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #fff;

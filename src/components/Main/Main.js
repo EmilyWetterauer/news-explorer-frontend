@@ -66,7 +66,7 @@ const USER = {
 };
 
 const Main = () => {
-  const [searchResults, setSearchResults] = useState(DEFAULT_SEARCH_RESULTS);
+  const [searchResults, setSearchResults] = useState();
   const [activeModal, setActiveModal] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 

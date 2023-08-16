@@ -23,6 +23,7 @@
 .about__headerText {
   width: 600px;
   height: 46px;
+  font-family: Roboto Slab, serif;
   font-size: 40px;
   color: #1a1b22;
   font-weight: 400;
@@ -32,6 +33,7 @@
   width: 600px;
   height: 60px;
   color: #1a1b22;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 18px;
 }

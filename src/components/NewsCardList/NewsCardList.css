@@ -10,6 +10,7 @@
 
 .newsCardList__header {
   align-self: flex-start;
+  font-family: Roboto Slab, serif;
   font-size: 40px;
   color: #1a1b22;
   font-weight: 400;
@@ -25,6 +26,7 @@
 
 .newsCardList__showMoreButton {
   color: #1a1b22;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   border-radius: 30px;

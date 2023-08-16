@@ -16,6 +16,7 @@
 }
 
 .header__title {
+  font-family: RobotoSlab, serif;
   font-weight: 700;
   font-size: 20px;
   color: #fff;
@@ -23,6 +24,7 @@
 }
 
 .header__titleSavedNews {
+  font-family: Roboto Slab, serif;
   font-weight: 700;
   font-size: 20px;
   color: #1a1b22;
@@ -39,7 +41,7 @@
   margin-right: 100px;
 }
 
-.header__home {
+/* .header__home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +53,7 @@
   color: #fff;
   margin: 0;
   border-bottom: 3px solid #fff;
-}
+} */
 
 .header__savedArticles {
   display: flex;

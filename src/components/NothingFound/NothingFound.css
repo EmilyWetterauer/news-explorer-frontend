@@ -23,6 +23,7 @@
 .nothingFound__header {
   height: 30px;
   width: 356px;
+  font-family: Roboto Slab, serif;
   font-weight: 400px;
   font-size: 26px;
   color: #1a1b22;
@@ -33,6 +34,7 @@
 .nothingFound__paragraphText {
   height: 48px;
   width: 226px;
+  font-family: Roboto, serif;
   font-weight: 400px;
   font-size: 18px;
   color: #b6bcbf;

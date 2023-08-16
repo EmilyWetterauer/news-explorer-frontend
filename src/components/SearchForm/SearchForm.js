@@ -2,7 +2,7 @@ import React from "react";
 
 import "./SearchForm.css";
 
-const SearchForm = ({handleSearchButtonSubmit}) => {
+const SearchForm = ({ handleSearchButtonSubmit }) => {
   return (
     <div className="searchForm__container">
       <div>
@@ -20,7 +20,12 @@ const SearchForm = ({handleSearchButtonSubmit}) => {
           className="searchForm__searchBar"
           placeholder="Enter Topic"
         />
-        <button className="searchForm__searchBarButton" onClick={handleSearchButtonSubmit}>Search</button>
+        <button
+          className="searchForm__searchBarButton"
+          onClick={handleSearchButtonSubmit}
+        >
+          Search
+        </button>
       </div>
     </div>
   );
