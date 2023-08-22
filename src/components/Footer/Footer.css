@@ -64,6 +64,10 @@
   cursor: pointer;
 }
 
+.newsApiLink {
+  text-decoration: none;
+}
+
 .homepageLinkHome {
   text-decoration: none;
 }

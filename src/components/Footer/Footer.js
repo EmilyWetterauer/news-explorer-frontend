@@ -7,9 +7,11 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer__container">
-      <div className="footer__leftSideContainer">
-        2023 SuperSite, Powered by NewsAPI
-      </div>
+      <a href="https://newsapi.org/" className="newsApiLink">
+        <div className="footer__leftSideContainer">
+          2023 SuperSite, Powered by NewsAPI
+        </div>
+      </a>
       <div className="footer__rightSideContainer">
         <Link to="/" className="homepageLinkHome">
           <p className="footer_home">Home</p>
