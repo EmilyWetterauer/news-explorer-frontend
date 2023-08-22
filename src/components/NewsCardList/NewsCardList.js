@@ -10,6 +10,8 @@ const NewsCardList = ({
   isLoggedIn,
   setSearchResults,
   USER,
+  savedArticles,
+  setSavedArticles,
 }) => {
   const [showAllCards, setShowAllCards] = useState(false);
 
@@ -29,12 +31,14 @@ const NewsCardList = ({
           }
           return (
             <NewsCard
-              result={result}
+              card={result}
               key={result.id}
               isLoggedIn={isLoggedIn}
               setSearchResults={setSearchResults}
               handleSignInButtonClick={handleSignInButtonClick}
               USER={USER}
+              savedArticles={savedArticles}
+              setSavedArticles={setSavedArticles}
             />
           );
         })}

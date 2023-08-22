@@ -26,27 +26,36 @@
 
 .searchForm__searchBarWrapper {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .searchForm__searchBar {
   width: 608px;
   height: 64px;
-  border-radius: 30px;
+  border-radius: 35px;
   padding: 0px 0px 0px 20px;
-  border: none;
+  border: 1px solid #d1d2d6;
+}
+
+.searchForm__searchBar {
+  outline: none;
 }
 
 .searchForm__searchBar::placeholder {
   font-family: Roboto, sans-serif;
 }
 
+.searchForm__inputError {
+}
+
 .searchForm__searchBarButton {
   color: #fff;
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  border-radius: 30px;
+  border-radius: 35px;
   width: 168px;
-  height: 64px;
+  height: 66px;
   background-color: #2f71e5;
   border: none;
   margin-left: -168px;

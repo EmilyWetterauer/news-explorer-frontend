@@ -8,10 +8,11 @@
   position: relative;
 }
 
-.newsCard__imageContainer {
+/* .newsCard__imageContainer {
   height: 272px;
   width: 400px;
-}
+  border: none;
+} */
 
 .newsCardList__signInButton {
   position: absolute;
@@ -98,7 +99,14 @@
   width: 400px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  background-color: red;
+  /* background-image: ; */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* max-height: fit-content; */
+  /* background-color: red; */
+  /* border: none; */
 }
 
 .newsCard__textContainer {
@@ -118,11 +126,13 @@
 
 .newsCard__headerText {
   width: 352px;
-  height: 60px;
+  max-height: 60px;
   font-family: Roboto Slab, serif;
   font-weight: 400;
   font-size: 26px;
   color: #1a1b22;
+  overflow: hidden;
+  margin: 0px 0px;
 }
 
 .newsCard__paragraphText {

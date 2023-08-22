@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+
+import useInputWithState from "../../utils/customHooks";
 
 import "./SearchForm.css";
 
-const SearchForm = ({ handleSearchButtonSubmit }) => {
+const SearchForm = ({ handleSearchButtonSubmit, showError }) => {
+  // const [queryString, setQueryString] = useState("");
+  const [queryString, setQueryString] = useInputWithState("");
+
   return (
     <div className="searchForm__container">
       <div>
@@ -17,12 +22,19 @@ const SearchForm = ({ handleSearchButtonSubmit }) => {
       <div className="searchForm__searchBarWrapper">
         <input
           type="text"
+          // minlength="1"
           className="searchForm__searchBar"
-          placeholder="Enter Topic"
+          placeholder={showError ? "Please enter a keyword" : "Enter Topic"}
+          value={queryString}
+          // required
+          onChange={setQueryString}
         />
         <button
+          onClick={() => {
+            handleSearchButtonSubmit(queryString);
+          }}
           className="searchForm__searchBarButton"
-          onClick={handleSearchButtonSubmit}
+          type="submit"
         >
           Search
         </button>

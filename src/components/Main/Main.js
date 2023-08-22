@@ -16,6 +16,9 @@ import RegisterModal from "../RegisterModal/RegisterModal";
 import SignInModal from "../SignInModal/SignInModal";
 import RegisterSuccessModal from "../RegisterSuccessModal/RegisterSuccessModal";
 
+import { getNewsCardList } from "../../utils/newsApi";
+import { apiKey } from "../../utils/constants";
+
 import "./Main.css";
 
 const DEFAULT_SEARCH_RESULTS = [
@@ -66,9 +69,15 @@ const USER = {
 };
 
 const Main = () => {
-  const [searchResults, setSearchResults] = useState();
+  const [searchResults, setSearchResults] = useState([]);
   const [activeModal, setActiveModal] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [savedArticles, setSavedArticles] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showError, setShowError] = useState(false);
+  const [showNothingFound, setShowNothingFound] = useState(false);
+
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleRegisterClick = () => {
     setActiveModal("register");
@@ -98,11 +107,37 @@ const Main = () => {
     setActiveModal("");
   };
 
-  const handleSearchButtonSubmit = () => {
-    //make api call here
-
-    setSearchResults(DEFAULT_SEARCH_RESULTS);
-    // setSearchResults(!searchResults);
+  const handleSearchButtonSubmit = (queryString) => {
+    if (queryString.trim() === "") {
+      setShowError(true);
+    } else {
+      setShowError(false);
+      var currentDate = new Date();
+      var sevenDaysAgo = new Date();
+      sevenDaysAgo.setDate(currentDate.getDate() - 7);
+      console.log(queryString);
+      setIsLoading(true);
+      getNewsCardList({
+        q: queryString,
+        apiKey,
+        from: sevenDaysAgo,
+        to: currentDate,
+        pageSize: 100,
+      })
+        .then((result) => {
+          setSearchResults(result.articles);
+          // setIsLoading(false);
+          setShowNothingFound(result.articles.length === 0);
+        })
+        .catch((error) => {
+          setErrorMessage(
+            "Sorry, something went wrong during the request. There may be a connection issue or the server may be down. Please try again later."
+          );
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    }
   };
 
   const handleLogout = () => {
@@ -121,19 +156,27 @@ const Main = () => {
                 isLoggedIn={isLoggedIn}
                 handleLogout={handleLogout}
               />
-              <SearchForm handleSearchButtonSubmit={handleSearchButtonSubmit} />
+              <SearchForm
+                handleSearchButtonSubmit={handleSearchButtonSubmit}
+                showError={showError}
+              />
             </div>
-            {searchResults && (
+            {errorMessage && (
+              <p className="main__serverErrorMessage">{errorMessage}</p>
+            )}
+            {searchResults.length !== 0 && (
               <NewsCardList
                 setSearchResults={setSearchResults}
                 searchResults={searchResults}
                 handleSignInButtonClick={handleSignInButtonClick}
                 isLoggedIn={isLoggedIn}
                 USER={USER}
+                savedArticles={savedArticles}
+                setSavedArticles={setSavedArticles}
               />
             )}
-            {/* {searchResults && <Preloader  />} */}
-            {/* {searchResults && <NothingFound />} */}
+            {isLoading && <Preloader />}
+            {showNothingFound && <NothingFound />}
             <About />
           </Route>
           <Route path="/saved-news">
@@ -144,6 +187,8 @@ const Main = () => {
               searchResults={searchResults}
               setSearchResults={setSearchResults}
               USER={USER}
+              savedArticles={savedArticles}
+              setSavedArticles={setSavedArticles}
             ></SavedNews>
           </Route>
         </Switch>

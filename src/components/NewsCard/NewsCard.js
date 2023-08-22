@@ -3,43 +3,35 @@ import React, { useState } from "react";
 import "./NewsCard.css";
 
 const NewsCard = ({
-  result,
+  card,
   isLoggedIn,
   setSearchResults,
   USER,
   handleSignInButtonClick,
   isSaved,
+  savedArticles,
+  setSavedArticles,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const isLiked = result.likes.includes(USER._id);
+  const isLiked = savedArticles.some((article) => {
+    return article.title === card.title;
+  });
   const handleSaveClick = () => {
-    console.log({ isLoggedIn });
     if (isLoggedIn) {
-      console.log({ isNotLiked: !isLiked });
       if (!isLiked) {
-        setSearchResults((prevSearchResults) => {
-          const updatedSearchResults = prevSearchResults.slice();
-          updatedSearchResults.forEach((currentResult) => {
-            if (currentResult._id === result._id) {
-              currentResult.likes.push(USER._id);
-            }
-          });
-          console.log({ prevSearchResults });
-          return updatedSearchResults;
+        setSavedArticles((prevSavedArticles) => {
+          return [...prevSavedArticles, card];
         });
       } else {
-        setSearchResults((prevSearchResults) => {
-          const updatedSearchResults = prevSearchResults.slice();
-          updatedSearchResults.forEach((currentResult) => {
-            if (currentResult._id === result._id) {
-              currentResult.likes = currentResult.likes.filter((currentId) => {
-                return currentId !== USER._id;
-              });
-            }
+        setSavedArticles((prevSavedArticles) => {
+          const updatedSavedArticles = prevSavedArticles.slice();
+          console.log({ updatedSavedArticles });
+          return updatedSavedArticles.filter((currentArticle) => {
+            console.log({ currentArticle, card });
+            console.log(currentArticle.title === card.title);
+            return currentArticle.title !== card.title;
           });
-          console.log({ prevSearchResults });
-          return updatedSearchResults;
         });
       }
     }
@@ -53,6 +45,12 @@ const NewsCard = ({
   if (isSaved) {
     newsCard__imageSaveButtonClassName = "newsCard__imageTrashCanButton";
   }
+
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  const formattedDate = new Date(card.publishedAt).toLocaleDateString(
+    undefined,
+    options
+  );
 
   return (
     <div className="newsCard__cardContainer">
@@ -89,7 +87,7 @@ const NewsCard = ({
             </button>
           )}
         </div>
-        <div className="newsCard__image" src={result.image}></div>
+        <img className="newsCard__image" src={card.urlToImage}></img>
       </div>
       <div className="newsCard__textContainer">
         <p
@@ -97,7 +95,7 @@ const NewsCard = ({
           type="text"
           //   value={searchResults.date}
         >
-          {result.date}
+          {formattedDate}
         </p>
 
         <h2
@@ -105,21 +103,22 @@ const NewsCard = ({
           type="text"
           //   value={searchResults.title}
         >
-          {result.title}
+          {card.title}
         </h2>
         <p
           className="newsCard__paragraphText"
           type="text"
           //   value={searchResults.content}
         >
-          {result.content}
+          {card.description}
         </p>
         <p
           className="newsCard__footerText"
           type="text"
           //   value={searchResults.tags}
+          // value={card.source.name}
         >
-          {result.tags}
+          {card.source.name}
         </p>
       </div>
     </div>
