@@ -78,6 +78,7 @@ const Main = () => {
   const [showNothingFound, setShowNothingFound] = useState(false);
 
   const [errorMessage, setErrorMessage] = useState("");
+  const [keyword, setKeyword] = useState("");
 
   const handleRegisterClick = () => {
     setActiveModal("register");
@@ -136,6 +137,7 @@ const Main = () => {
         })
         .finally(() => {
           setIsLoading(false);
+          setKeyword(queryString);
         });
     }
   };
@@ -173,6 +175,7 @@ const Main = () => {
                 USER={USER}
                 savedArticles={savedArticles}
                 setSavedArticles={setSavedArticles}
+                keyword={keyword}
               />
             )}
             {isLoading && <Preloader />}
@@ -181,7 +184,7 @@ const Main = () => {
           </Route>
           <Route path="/saved-news">
             <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
-            <SavedNewsHeader USER={USER}></SavedNewsHeader>
+            <SavedNewsHeader USER={USER} keyword={keyword}></SavedNewsHeader>
             <SavedNews
               isLoggedIn={isLoggedIn}
               searchResults={searchResults}
@@ -189,6 +192,7 @@ const Main = () => {
               USER={USER}
               savedArticles={savedArticles}
               setSavedArticles={setSavedArticles}
+              keyword={keyword}
             ></SavedNews>
           </Route>
         </Switch>

@@ -12,21 +12,22 @@ const NewsCardList = ({
   USER,
   savedArticles,
   setSavedArticles,
+  keyword,
 }) => {
-  const [showAllCards, setShowAllCards] = useState(false);
+  const [cardsToShow, setCardsToShow] = useState(3);
 
-  const toggleShowAllCards = () => {
-    setShowAllCards(!showAllCards);
+  const cardsToShowIncrement = 3;
+
+  const handleShowMoreClick = () => {
+    setCardsToShow(cardsToShow + cardsToShowIncrement);
   };
-
-  const buttonText = showAllCards ? "Show less" : "Show more";
 
   return (
     <div className="newsCardList__container">
       <p className="newsCardList__header">Search Results</p>
       <div className="newsCardList__newsCardsContainer">
         {searchResults.map((result, index) => {
-          if (!showAllCards && index >= 3) {
+          if (index >= cardsToShow) {
             return null;
           }
           return (
@@ -39,16 +40,19 @@ const NewsCardList = ({
               USER={USER}
               savedArticles={savedArticles}
               setSavedArticles={setSavedArticles}
+              keyword={keyword}
             />
           );
         })}
       </div>
-      <button
-        className="newsCardList__showMoreButton"
-        onClick={toggleShowAllCards}
-      >
-        {buttonText}
-      </button>
+      {cardsToShow < searchResults.length && (
+        <button
+          className="newsCardList__showMoreButton"
+          onClick={handleShowMoreClick}
+        >
+          Show more
+        </button>
+      )}
     </div>
   );
 };

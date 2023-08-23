@@ -2,7 +2,7 @@ import React from "react";
 
 import "./SavedNewsHeader.css";
 
-const SavedNewsHeader = ({ USER }) => {
+const SavedNewsHeader = ({ USER, keyword }) => {
   return (
     <div className="savedNewsHeader__container">
       <div className="savedNewsHeader__contentContainer">
@@ -10,9 +10,7 @@ const SavedNewsHeader = ({ USER }) => {
         <h1 className="savedNewsHeader__titleName">
           {USER.name}, you have 5 saved articles
         </h1>
-        <p className="savedNewsHeader__keywordsText">
-          By keywords: Nature, Yellowstone, and 2 others
-        </p>
+        <p className="savedNewsHeader__keywordsText">By keywords: {keyword}</p>
       </div>
     </div>
   );

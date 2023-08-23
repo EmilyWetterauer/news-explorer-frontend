@@ -11,6 +11,7 @@ const SavedNews = ({
   USER,
   savedArticles,
   setSavedArticles,
+  keyword,
 }) => {
   return (
     <div className="savedNews__container">
@@ -26,6 +27,7 @@ const SavedNews = ({
               USER={USER}
               savedArticles={savedArticles}
               setSavedArticles={setSavedArticles}
+              keyword={keyword}
             />
           );
         })}

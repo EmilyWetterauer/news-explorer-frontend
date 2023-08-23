@@ -11,6 +11,7 @@ const NewsCard = ({
   isSaved,
   savedArticles,
   setSavedArticles,
+  keyword,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -57,7 +58,7 @@ const NewsCard = ({
       <div className="newsCard__imageContainer">
         {isLoggedIn && isSaved && (
           <div className="newsCard__keywordLabel">
-            <p className="newsCard__keywordLableText">Nature</p>
+            <p className="newsCard__keywordLableText">{keyword}</p>
           </div>
         )}
         <div
