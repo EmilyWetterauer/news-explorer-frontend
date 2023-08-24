@@ -21,7 +21,9 @@ const NewsCard = ({
   const handleSaveClick = () => {
     if (isLoggedIn) {
       if (!isLiked) {
+        console.log(card);
         setSavedArticles((prevSavedArticles) => {
+          card.keyword = keyword;
           return [...prevSavedArticles, card];
         });
       } else {
@@ -58,7 +60,7 @@ const NewsCard = ({
       <div className="newsCard__imageContainer">
         {isLoggedIn && isSaved && (
           <div className="newsCard__keywordLabel">
-            <p className="newsCard__keywordLableText">{keyword}</p>
+            <p className="newsCard__keywordLableText">{card.keyword}</p>
           </div>
         )}
         <div

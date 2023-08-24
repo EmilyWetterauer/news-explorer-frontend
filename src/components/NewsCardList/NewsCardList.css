@@ -10,7 +10,7 @@
 
 .newsCardList__header {
   align-self: flex-start;
-  font-family: Roboto Slab, serif;
+  font-family: "Roboto Slab", serif;
   font-size: 40px;
   color: #1a1b22;
   font-weight: 400;
@@ -21,7 +21,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 1420px;
+  /* width: 1420px; */
+  width: 1230px;
   margin-bottom: 65px;
 }
 

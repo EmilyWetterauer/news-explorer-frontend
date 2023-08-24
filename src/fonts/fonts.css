@@ -1,36 +1,36 @@
 @font-face {
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
-  src: url("./RobotoSlab-Regular400.ttf") format("truetype");
+  src: url("./roboto-slab-400-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 700;
-  src: url("./RobotoSlab-Bold700.ttf") format("truetype");
+  src: url("./roboto-slab-700.woff") format("woff");
 }
 
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: url("./Roboto-Regular400.ttf") format("truetype");
+  src: url("./roboto-400-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  src: url("./Roboto-Medium500.ttf") format("truetype");
+  src: url("./roboto-500.woff") format("woff");
 }
 
 @font-face {
   font-family: Roboto;
   font-style: black;
   font-weight: 900;
-  src: url("./Roboto-Black900.ttf") format("truetype");
+  src: url("./roboto-900.woff") format("woff");
 }
 
 @font-face {
@@ -44,5 +44,5 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  src: url("./Inter-Regular400.ttf") format("truetype");
+  src: url("./inter-400-regular.woff") format("woff");
 }
