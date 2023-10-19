@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./Navigation.css";
 
@@ -8,64 +8,109 @@ import homeNewsIcon from "../../images/Union.svg";
 
 import savedNewsIcon from "../../images/logout.svg";
 
-const Navigation = ({ isLoggedIn, handleSignInButtonClick, handleLogout }) => {
+import hamburgerIconWhite from "../../images/hamburgerIconWhite.svg";
+
+import hamburgerIconBlack from "../../images/hamburgerIconBlack.svg";
+
+import closeButton from "../../images/close.svg";
+
+const Navigation = ({
+  isLoggedIn,
+  handleSignInButtonClick,
+  handleLogout,
+  showDropDown,
+  setShowDropDown,
+  handleDropDownClick,
+  activeModal,
+  screenWidth,
+}) => {
   const location = useLocation();
+
+  const handleClick = () => {
+    setShowDropDown(!showDropDown);
+  };
 
   const isSavedNews = location.pathname === "/saved-news";
 
-  const header__homeClassName = isSavedNews
-    ? "header__homeSavedNews"
-    : "header__home";
+  const navigationHeader__homeClassName = isSavedNews
+    ? "navigationHeader__homeSavedNews"
+    : "navigationHeader__home";
 
-  const header__profileButtonClassName = isSavedNews
-    ? "header__profileButtonSavedNews"
-    : "header__profileButton";
+  const navigationHeader__profileButtonClassName = isSavedNews
+    ? "navigationHeader__profileButtonSavedNews"
+    : "navigationHeader__profileButton";
 
-  const header__profileButtonTextClassName = isSavedNews
-    ? "header__profileButtonTextSavedNews"
-    : "header__profileButtonText";
+  const navigationHeader__profileButtonTextClassName = isSavedNews
+    ? "navigationHeader__profileButtonTextSavedNews"
+    : "navigationHeader__profileButtonText";
 
-  const header__savedArticlesClassName = isSavedNews
-    ? "header__savedArticlesSavedNews"
-    : "header__savedArticles";
+  const navigationHeader__savedArticlesClassName = isSavedNews
+    ? "navigationHeader__savedArticlesSavedNews"
+    : "navigationHeader__savedArticles";
 
   const renderAuthorizedUsers = () => {
     const iconSrc = isSavedNews ? homeNewsIcon : savedNewsIcon;
 
-    return (
+    return screenWidth > 320 ? (
       <>
         <Link to="/" className="homepageLinkHome">
-          <p className={header__homeClassName}>Home</p>
+          <p className={navigationHeader__homeClassName}>Home</p>
         </Link>
-        <Link to="/saved-news" className="savedNewsLinkSavedArticles">
-          <p className={header__savedArticlesClassName}>Saved Articles</p>
+        <Link
+          to="/saved-news"
+          className={navigationHeader__savedArticlesClassName}
+        >
+          <p>Saved Articles</p>
         </Link>
         <Link to="/">
           <button
-            className={header__profileButtonClassName}
+            className={navigationHeader__profileButtonClassName}
             onClick={handleLogout}
           >
-            <span className={header__profileButtonTextClassName}>Emma</span>
-            <span className="header__profileButtonIcon">
+            <span className={navigationHeader__profileButtonTextClassName}>
+              Emma
+            </span>
+            <span className="navigationHeader__profileButtonIcon">
               <img src={iconSrc} alt="arrowImage" />
             </span>
           </button>
         </Link>
       </>
+    ) : (
+      renderDropDownButton()
     );
   };
 
+  const renderDropDownButton = () => {
+    return showDropDown ? (
+      <div>
+        <img onClick={handleClick} src={closeButton} alt="Close Button" />
+      </div>
+    ) : activeModal !== "signIn" && activeModal !== "register" ? (
+      <div>
+        <img
+          className="navigationHeader__hamburgerIcon"
+          onClick={handleDropDownClick}
+          src={isSavedNews ? hamburgerIconBlack : hamburgerIconWhite}
+          alt="Drop Down Button"
+        />
+      </div>
+    ) : null;
+  };
+
   const renderNonAuthorizedUsers = () => {
-    return (
+    return screenWidth > 320 ? (
       <>
-        <p className="header__home">Home</p>
+        <p className="navigationHeader__home">Home</p>
         <button
-          className="header__signInButton"
+          className="navigationHeader__signInButton"
           onClick={handleSignInButtonClick}
         >
-          <span className="header__signInButtonText">Sign In</span>
+          <span className="navigationHeader__signInButtonText">Sign In</span>
         </button>
       </>
+    ) : (
+      renderDropDownButton()
     );
   };
 

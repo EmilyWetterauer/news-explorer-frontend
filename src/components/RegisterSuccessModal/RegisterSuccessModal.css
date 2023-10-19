@@ -27,6 +27,16 @@
   position: absolute;
   top: -40px;
   right: -40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .registerSuccessModal__closeButton {
+    top: -30px;
+    right: 10px;
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .registerSuccessModal__title {
@@ -37,12 +47,24 @@
   color: #000;
 }
 
+@media screen and (max-width: 320px) {
+  .registerSuccessModal__title {
+    width: 90%;
+  }
+}
+
 .registerSuccessModal__signInLink {
   color: #2f71e5;
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
   width: 350px;
+}
+
+@media screen and (max-width: 320px) {
+  .registerSuccessModal__signInLink {
+    width: 90%;
+  }
 }
 
 .registerSuccessModal__signInLink:hover {

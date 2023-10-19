@@ -11,6 +11,17 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 320px) {
+  .popupWithForm__wrapper {
+    top: 45px;
+    background-color: #fff;
+    height: 100vh;
+    min-width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+}
+
 .popupWithForm__form.small {
   display: flex;
   flex-direction: column;
@@ -21,6 +32,20 @@
   height: 383px;
   background-color: #fff;
   border-radius: 16px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 320px) {
+  .popupWithForm__form.small {
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    min-height: 100vh;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
 }
 
 .popupWithForm__form.medium {
@@ -35,8 +60,22 @@
   border-radius: 16px;
 }
 
+@media screen and (max-width: 320px) {
+  .popupWithForm__form.medium {
+    justify-content: flex-start;
+    gap: 15px;
+    width: 320px;
+    min-height: 100vh;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
 .popupWithForm__title {
-  width: 360px;
+  width: 100%;
+  margin-left: 60px;
   height: 32px;
   color: #1a1b22;
   font-family: Roboto, sans-serif;
@@ -44,11 +83,34 @@
   font-weight: 900;
 }
 
+@media screen and (max-width: 320px) {
+  .popupWithForm__title {
+    color: #000;
+    width: 90%;
+    margin: 0px;
+    margin-top: 10px;
+  }
+}
+
 .popupWithForm__closeButton {
   display: flex;
-  position: absolute;
-  top: -40px;
-  right: -40px;
+
+  position: relative;
+  top: -118px;
+  right: -230px;
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (max-width: 320px) {
+  .popupWithForm__closeButton {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: auto;
+    top: -40px;
+    right: 15px;
+  }
 }
 
 .popupWithForm__closeButton:hover {
@@ -62,6 +124,16 @@
   border-radius: 30px;
   align-self: center;
   font-family: Roboto, sans-serif;
+  border: none;
+}
+
+@media screen and (max-width: 320px) {
+  .popupWithForm__submitButton {
+    width: 288px;
+    border: none;
+    color: #b6bcbf;
+    cursor: pointer;
+  }
 }
 
 .popupWithForm__signInText {
@@ -73,6 +145,12 @@
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 320px) {
+  .popupWithForm__signInText {
+    width: 90%;
+  }
 }
 
 .popupWithForm__SignInLink {

@@ -2,6 +2,12 @@
   width: 100%;
 }
 
+.main__wrapperFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .main__backgroundImage {
   background-image: url("../../images/backgroungCellPhoneImage.png");
   width: 100%;

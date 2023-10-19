@@ -6,12 +6,42 @@
   height: 624px;
 }
 
+@media screen and (max-width: 768px) {
+  .about__container {
+    height: 354px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__container {
+    flex-direction: column;
+    height: 752px;
+  }
+}
+
 .about__avatarImage {
   height: 464px;
   width: 464px;
   background-color: blueviolet;
   border-radius: 50%;
-  /* margin-left: 75px; */
+}
+
+@media screen and (max-width: 768px) {
+  .about__avatarImage {
+    height: 232px;
+    width: 232px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__avatarImage {
+    height: 272px;
+    width: 272px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
 }
 .about__textContainer {
   height: 464px;
@@ -19,6 +49,31 @@
   margin-top: 60px;
   margin-right: 100px;
   margin-left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+    height: 168px;
+    width: 424px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    margin-right: 0px;
+  }
 }
 
 .about__headerText {
@@ -30,6 +85,26 @@
   font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+  .about__headerText {
+    width: 424px;
+    font-size: 30px;
+    height: 34px;
+    margin: 0px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__headerText {
+    width: 90%;
+    font-size: 30px;
+    height: 40px;
+    margin: 0px;
+    margin-bottom: 12px;
+  }
+}
+
 .about__paragraphText {
   width: 600px;
   height: 60px;
@@ -37,4 +112,24 @@
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__paragraphText {
+    width: 424px;
+    height: 105px;
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__paragraphText {
+    width: 90%;
+    height: 105px;
+    margin: 0px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
 }

@@ -35,13 +35,13 @@ const PopupWithForm = ({
           className="popupWithForm__closeButton"
           src={closeButton}
           onClick={onClose}
-        ></img>
+        />
         {children}
         <button className="popupWithForm__submitButton" onClick={handleClick}>
           {buttonLabel}
         </button>
         <div className="popupWithForm__signInText">
-          {"or"}
+          {"or "}
           <a
             className="popupWithForm__SignInLink"
             onClick={handleAlternateButtonClick}

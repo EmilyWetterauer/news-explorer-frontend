@@ -6,6 +6,18 @@
   height: 576px;
 }
 
+@media screen and (max-width: 768px) {
+  .searchForm__container {
+    height: 336px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searchForm__container {
+    height: 480px;
+  }
+}
+
 .searchForm__headerQuestion {
   height: 128px;
   width: 608px;
@@ -13,6 +25,24 @@
   font-family: "Roboto Slab", serif;
   font-size: 60px;
   margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm__headerQuestion {
+    width: 385px;
+    height: 80px;
+    font-size: 36px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searchForm__headerQuestion {
+    width: 285px;
+    height: 80px;
+    font-size: 36px;
+    margin-top: 0px;
+  }
 }
 
 .searchForm__statement {
@@ -24,10 +54,31 @@
   margin: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .searchForm__statement {
+    width: 452px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searchForm__statement {
+    width: 288px;
+    height: 72px;
+  }
+}
+
 .searchForm__searchBarWrapper {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+  .searchForm__searchBarWrapper {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
 }
 
 .searchForm__searchBar {
@@ -36,6 +87,25 @@
   border-radius: 35px;
   padding: 0px 0px 0px 20px;
   border: 1px solid #d1d2d6;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm__searchBar {
+    width: 452px;
+    height: 56px;
+    padding: 0px 0px 0px 20px;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searchForm__searchBar {
+    width: 288px;
+    height: 56px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 
 .searchForm__searchBar {
@@ -59,6 +129,23 @@
   background-color: #2f71e5;
   border: none;
   margin-left: -168px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm__searchBarButton {
+    width: 160px;
+    height: 58px;
+    margin-left: -160px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searchForm__searchBarButton {
+    width: 288px;
+    height: 56px;
+    margin-left: 0px;
+  }
 }
 
 .searchForm__searchBarButton:hover {

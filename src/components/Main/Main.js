@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Route, Redirect, BrowserRouter, Switch } from "react-router-dom";
 
@@ -15,6 +15,8 @@ import SavedNews from "../SavedNews/SavedNews";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import SignInModal from "../SignInModal/SignInModal";
 import RegisterSuccessModal from "../RegisterSuccessModal/RegisterSuccessModal";
+
+import DropDownModal from "../DropDownModal/DropDownModal";
 
 import { getNewsCardList } from "../../utils/newsApi";
 import { apiKey } from "../../utils/constants";
@@ -65,20 +67,38 @@ import "./Main.css";
 const USER_ID = 1;
 const USER = {
   _id: 1,
-  name: "emma",
+  name: "Emma",
 };
 
 const Main = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [activeModal, setActiveModal] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [savedArticles, setSavedArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [showError, setShowError] = useState(false);
   const [showNothingFound, setShowNothingFound] = useState(false);
 
+  const [showDropDown, setShowDropDown] = useState(false);
+
   const [errorMessage, setErrorMessage] = useState("");
   const [keyword, setKeyword] = useState("");
+
+  const [savedArticles, setSavedArticles] = useState([]);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", updateScreenWidth);
+    return () => {
+      window.removeEventListener("resize", updateScreenWidth);
+    };
+  }, []);
+
+  const handleDropDownClick = () => {
+    setActiveModal("dropDown");
+  };
 
   const handleRegisterClick = () => {
     setActiveModal("register");
@@ -98,12 +118,10 @@ const Main = () => {
   };
 
   const handleRegisterSubmit = () => {
-    //have to make the api call here
     setActiveModal("registerSuccess");
   };
 
   const handleSignInSubmit = () => {
-    //have to make the api call here
     setIsLoggedIn(true);
     setActiveModal("");
   };
@@ -127,7 +145,6 @@ const Main = () => {
       })
         .then((result) => {
           setSearchResults(result.articles);
-          // setIsLoading(false);
           setShowNothingFound(result.articles.length === 0);
         })
         .catch((error) => {
@@ -144,11 +161,19 @@ const Main = () => {
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-    // setSearchResults(DEFAULT_SEARCH_RESULTS);
+    setActiveModal("");
   };
 
+  const handleSavedArticlesClick = () => {
+    setActiveModal("");
+  };
+
+  const mainWrapperClass = activeModal
+    ? "main__wrapper main__wrapperFixed"
+    : "main__wrapper";
+
   return (
-    <div className="main__wrapper">
+    <div className={mainWrapperClass}>
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
@@ -157,6 +182,11 @@ const Main = () => {
                 handleSignInButtonClick={handleSignInButtonClick}
                 isLoggedIn={isLoggedIn}
                 handleLogout={handleLogout}
+                handleDropDownClick={handleDropDownClick}
+                activeModal={activeModal}
+                showDropDown={showDropDown}
+                setShowDropDown={setShowDropDown}
+                screenWidth={screenWidth}
               />
               <SearchForm
                 handleSearchButtonSubmit={handleSearchButtonSubmit}
@@ -183,11 +213,23 @@ const Main = () => {
             <About />
           </Route>
           <Route path="/saved-news">
-            <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
+            <Header
+              isLoggedIn={isLoggedIn}
+              handleLogout={handleLogout}
+              activeModal={activeModal}
+              handleSignInButtonClick={handleSignInButtonClick}
+              handleDropDownClick={handleDropDownClick}
+              showDropDown={showDropDown}
+              setShowDropDown={setShowDropDown}
+              screenWidth={screenWidth}
+            />
             <SavedNewsHeader
               USER={USER}
               keyword={keyword}
               savedArticles={savedArticles}
+              showDropDown={showDropDown}
+              handleDropDownClick={handleDropDownClick}
+              activeModal={activeModal}
             ></SavedNewsHeader>
             <SavedNews
               isLoggedIn={isLoggedIn}
@@ -202,6 +244,17 @@ const Main = () => {
         </Switch>
 
         <Footer />
+
+        {activeModal === "dropDown" && screenWidth <= 320 && (
+          <DropDownModal
+            screenWidth={screenWidth}
+            isLoggedIn={isLoggedIn}
+            onClose={closeAllModals}
+            handleSignInButtonClick={handleSignInButtonClick}
+            handleLogout={handleLogout}
+            handleSavedArticlesClick={handleSavedArticlesClick}
+          ></DropDownModal>
+        )}
 
         {activeModal === "register" && (
           <RegisterModal

@@ -7,6 +7,12 @@
   font-weight: 400;
 }
 
+@media screen and (max-width: 320px) {
+  .signInModal__emailLabel {
+    width: 90%;
+  }
+}
+
 .signInModal__emailInput {
   width: 360px;
   height: 14px;
@@ -14,7 +20,18 @@
   font-weight: 400;
   color: #000;
   border: none;
-  border-bottom: solid 2px #000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.signInModal__emailInput::placeholder {
+  opacity: 20%;
+}
+
+@media screen and (max-width: 320px) {
+  .signInModal__emailInput {
+    width: 90%;
+    margin-bottom: 25px;
+  }
 }
 
 .signInModal__passwordLabel {
@@ -26,6 +43,12 @@
   font-weight: 400;
 }
 
+@media screen and (max-width: 320px) {
+  .signInModal__passwordLabel {
+    width: 90%;
+  }
+}
+
 .signInModal__passwordInput {
   width: 360px;
   height: 14px;
@@ -33,5 +56,15 @@
   font-weight: 400;
   color: #000;
   border: none;
-  border-bottom: solid 2px #000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.signInModal__passwordInput::placeholder {
+  opacity: 20%;
+}
+
+@media screen and (max-width: 320px) {
+  .signInModal__passwordInput {
+    width: 90%;
+  }
 }

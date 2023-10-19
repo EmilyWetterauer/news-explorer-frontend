@@ -14,6 +14,7 @@ const NewsCard = ({
   keyword,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [leaveTimer, setLeaveTimer] = useState(null);
 
   const isLiked = savedArticles.some((article) => {
     return article.title === card.title;
@@ -55,73 +56,64 @@ const NewsCard = ({
     options
   );
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <div className="newsCard__cardContainer">
-      <div className="newsCard__imageContainer">
+      <div
+        className="newsCard__imageContainer"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         {isLoggedIn && isSaved && (
           <div className="newsCard__keywordLabel">
             <p className="newsCard__keywordLableText">{card.keyword}</p>
           </div>
         )}
-        <div
-          className="newsCard__imageSaveButtonContainer"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+        <div className="newsCard__imageSaveButtonContainer">
           <div
             className={newsCard__imageSaveButtonClassName}
             onClick={handleSaveClick}
-          ></div>
-
-          {!isLoggedIn && isHovered && (
-            <button
-              className="newsCardList__signInButton"
-              onClick={handleSignInButtonClick}
-            >
-              Sign in to save articles
-            </button>
-          )}
-          {isLoggedIn && isSaved && isHovered && (
-            <button
-              className="newsCardList__signInButton"
-              onClick={handleSaveClick}
-            >
-              Remove from saved
-            </button>
-          )}
+          >
+            {!isLoggedIn && isHovered && (
+              <button
+                className="newsCardList__signInButton"
+                onClick={handleSignInButtonClick}
+              >
+                Sign in to save articles
+              </button>
+            )}
+            {isLoggedIn && isSaved && isHovered && (
+              <button
+                className="newsCardList__signInButton"
+                onClick={handleSaveClick}
+              >
+                Remove from saved
+              </button>
+            )}
+          </div>
         </div>
         <img className="newsCard__image" src={card.urlToImage}></img>
       </div>
       <div className="newsCard__textContainer">
-        <p
-          className="newsCard__dateText"
-          type="text"
-          //   value={searchResults.date}
-        >
+        <p className="newsCard__dateText" type="text">
           {formattedDate}
         </p>
 
-        <h2
-          className="newsCard__headerText"
-          type="text"
-          //   value={searchResults.title}
-        >
+        <h2 className="newsCard__headerText" type="text">
           {card.title}
         </h2>
-        <p
-          className="newsCard__paragraphText"
-          type="text"
-          //   value={searchResults.content}
-        >
+        <p className="newsCard__paragraphText" type="text">
           {card.description}
         </p>
-        <p
-          className="newsCard__footerText"
-          type="text"
-          //   value={searchResults.tags}
-          // value={card.source.name}
-        >
-          {card.source.name}
+        <p className="newsCard__footerText" type="text">
+          {card.source.name.toUpperCase()}
         </p>
       </div>
     </div>

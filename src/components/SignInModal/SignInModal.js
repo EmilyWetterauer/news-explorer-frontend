@@ -18,13 +18,13 @@ const SignInModal = ({ onClose, handleAlternateButtonClick, handleSubmit }) => {
       <label className="signInModal__emailLabel">Email</label>
       <input
         className="signInModal__emailInput"
-        placeholder="Email"
+        placeholder="Enter Email"
         required
       ></input>
       <label className="signInModal__passwordLabel">Password</label>
       <input
         className="signInModal__passwordInput"
-        placeholder="Password"
+        placeholder="Enter Password"
         required
       ></input>
     </PopupWithForm>

@@ -9,6 +9,20 @@
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .newsCard__cardContainer {
+    height: 420px;
+    width: 224px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .newsCard__cardContainer {
+    height: 440px;
+    width: 288px;
+  }
+}
+
 .newsCard__imageContainer {
   height: 272px;
   width: 400px;
@@ -16,6 +30,20 @@
   align-items: center;
   justify-content: center;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__imageContainer {
+    height: 150px;
+    width: 224px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .newsCard__imageContainer {
+    height: 196px;
+    width: 288px;
+  }
 }
 
 .newsCardList__signInButton {
@@ -33,6 +61,19 @@
   font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: 500;
+  padding-right: 10px;
+  background-color: orange;
+}
+
+.newsCardList__signInButton:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCardList__signInButton {
+    width: 164px;
+    top: 0px;
+  }
 }
 
 .newsCard__imageSaveButtonContainer {
@@ -46,6 +87,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+}
+
+.newsCard__imageSaveButtonContainer:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__imageSaveButtonContainer {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .newsCard__imageSaveButton {
@@ -73,7 +126,7 @@
 }
 
 .newsCard__imageTrashCanButton {
-  background-image: url("../../images/trash.svg");
+  background-image: url("../../images/grayTrash.svg");
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
@@ -93,6 +146,13 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .newsCard__keywordLabel {
+    top: 8px;
+    left: 8px;
+  }
+}
+
 .newsCard__keywordLableText {
   color: #000;
   font-family: Roboto, sans-serif;
@@ -107,12 +167,6 @@
   border-top-left-radius: 10px;
   height: 100%;
   width: 100%;
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* background-position: center center; */
-  /* max-height: fit-content; */
-  /* background-color: red; */
-  /* border: none; */
 }
 
 .newsCard__textContainer {
@@ -121,8 +175,28 @@
   margin-left: 20px;
 }
 
+.newsCard__textContainer:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__textContainer {
+    height: 244px;
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .newsCard__textContainer {
+    height: 244px;
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
 .newsCard__dateText {
-  width: 149px;
+  width: 90%;
   height: 24px;
   color: #b6bcbf;
   font-family: "Source Sans 3", sans-serif;
@@ -130,15 +204,44 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 320px) {
+  .newsCard__dateText {
+    width: 90%;
+  }
+}
+
 .newsCard__headerText {
   width: 352px;
-  max-height: 60px;
+  height: 60px;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 26px;
   color: #1a1b22;
-  overflow: hidden;
   margin: 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__headerText {
+    height: 72px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .newsCard__headerText {
+    height: 48px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .newsCard__paragraphText {
@@ -150,11 +253,46 @@
   color: #1a1b22;
 }
 
+@media screen and (max-width: 768px) {
+  .newsCard__paragraphText {
+    width: 90%;
+    height: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    line-height: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .newsCard__paragraphText {
+    width: 90%;
+    height: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    line-height: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
 .newsCard__footerText {
-  width: 121px;
+  width: 90%;
   height: 20px;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   font-size: 16px;
   color: #b6bcbf;
+}
+
+@media screen and (max-width: 320px) {
+  .newsCard__footerText {
+    margin-top: 0px;
+    width: 90%;
+  }
 }

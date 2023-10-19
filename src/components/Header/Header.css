@@ -8,6 +8,18 @@
   border-bottom: solid #d1d2d6 1px;
 }
 
+@media screen and (max-width: 768px) {
+  .header__container {
+    height: 66px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__container {
+    height: 56px;
+  }
+}
+
 .header__leftSideContainer {
   align-items: center;
   display: flex;
@@ -15,20 +27,24 @@
   margin-left: 100px;
 }
 
-.header__title {
-  font-family: "Roboto Slab", serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  .header__leftSideContainer {
+    height: 66px;
+    margin-left: 40px;
+  }
 }
 
-.header__titleSavedNews {
-  font-family: "Roboto Slab", serif;
-  font-weight: 700;
+@media screen and (max-width: 320px) {
+  .header__leftSideContainer {
+    width: 117px;
+    height: 57px;
+    margin: 0px;
+  }
+}
+
+.header__homepageLinkNewsExplorer {
+  text-decoration: none;
   font-size: 20px;
-  color: #1a1b22;
-  cursor: pointer;
 }
 
 .header__rightSideContainer {
@@ -41,59 +57,54 @@
   margin-right: 100px;
 }
 
-.header__savedArticles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 178px;
-  height: 80px;
-  font-weight: 500;
-  font-size: 18px;
-  color: #b6bcbf;
-  text-align: center;
-  align-items: center;
-  margin: 0;
-  margin-left: 40px;
-  cursor: pointer;
-}
-.header__profileButton {
-  width: 112px;
-  height: 48px;
-  border: solid #fff 1px;
-  background: none;
-  border-radius: 50px;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-  margin-left: 40px;
+@media screen and (max-width: 768px) {
+  .header__rightSideContainer {
+    margin: 0px;
+    margin-right: 45px;
+    height: 66px;
+  }
 }
 
-.header__profileButtonText {
-  font-weight: 500;
-  font-size: 18px;
+@media screen and (max-width: 320px) {
+  .header__rightSideContainer {
+    margin: 0px;
+    height: 57px;
+  }
+}
+
+.header__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 20px;
   color: #fff;
-}
-
-.header__signInButton {
-  width: 176px;
-  height: 48px;
-  border: solid #fff 1px;
-  border-radius: 50px;
-  background: none;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
   cursor: pointer;
-  margin-left: 40px;
 }
 
-.header__signInButtonText {
-  font-weight: 500;
-  font-size: 18px;
-  color: #fff;
+@media screen and (max-width: 320px) {
+  .header__title {
+    font-size: 16px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-left: 20px;
+  }
 }
 
-.homepageLinkNewsExplorer {
-  text-decoration: none;
+.header__titleSavedNews {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1a1b22;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .header__titleSavedNews {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header_title_hide {
+    visibility: hidden;
+  }
 }
