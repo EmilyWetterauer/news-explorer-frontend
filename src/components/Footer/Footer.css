@@ -2,20 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80px;
   width: 100%;
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .footer__container {
-    height: 64px;
-  }
-}
-
 @media screen and (max-width: 320px) {
   .footer__container {
-    height: 166px;
     flex-direction: column-reverse;
   }
 }
@@ -26,7 +18,6 @@
   font-size: 16px;
   color: #b6bcbf;
   width: 433px;
-  height: 22px;
   margin-left: 100px;
 }
 
@@ -34,7 +25,6 @@
   .footer__leftSideContainer {
     margin-left: 40px;
     width: 100%;
-    height: 64px;
     align-items: center;
   }
 }
@@ -43,7 +33,8 @@
   .footer__leftSideContainer {
     margin-left: 0px;
     width: 100%;
-    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -59,7 +50,6 @@
 @media screen and (max-width: 768px) {
   .footer__rightSideContainer {
     margin-right: 40px;
-    height: 64px;
   }
 }
 
@@ -116,6 +106,7 @@
 @media screen and (max-width: 320px) {
   .footer_tripleTen {
     margin-left: 0;
+    margin-top: 0px;
   }
 }
 
@@ -155,19 +146,12 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 320px) {
-  .homepageLinkHome {
-    margin-left: 15px;
-  }
-}
-
 .tripleTenLink {
   text-decoration: none;
 }
 
 @media screen and (max-width: 320px) {
   .tripleTenLink {
-    margin-left: 15px;
     margin-top: 0px;
   }
 }
@@ -178,7 +162,7 @@
 
 @media screen and (max-width: 320px) {
   .githubLink {
-    margin-left: 25px;
+    margin-left: 55px;
   }
 }
 
@@ -188,6 +172,6 @@
 
 @media screen and (max-width: 320px) {
   .facebookLink {
-    margin-left: 15px;
+    margin-left: 22px;
   }
 }

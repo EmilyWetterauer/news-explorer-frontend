@@ -102,7 +102,7 @@ const DropDownModal = ({
             className="dropDownModal__signInButton"
             onClick={handleSignInButtonClick}
           >
-            <span className="header__signInButtonText">Sign In</span>
+            <span className="dropDownModal__signInButtonText">Sign In</span>
           </button>
         </div>
       </div>

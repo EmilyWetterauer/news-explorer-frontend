@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer__container">
       <a href="https://newsapi.org/" className="newsApiLink">
         <div className="footer__leftSideContainer">
-          2023 SuperSite, Powered by NewsAPI
+          © 2023 SuperSite, Powered by NewsAPI
         </div>
       </a>
       <div className="footer__rightSideContainer">

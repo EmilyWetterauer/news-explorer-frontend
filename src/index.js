@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./components/App/App";
 import reportWebVitals from "./reportWebVitals";
 
-// import "normalize.css";
+import "normalize.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

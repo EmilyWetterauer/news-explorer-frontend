@@ -85,10 +85,11 @@
   cursor: pointer;
 }
 
-.header__signInButtonText {
+.dropDownModal__signInButtonText {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
+  color: #fff;
 }
 
 .dropDownModal__homeLinkLoggedIn {
@@ -188,4 +189,8 @@
   font-weight: 500;
   font-size: 18px;
   color: #fff;
+}
+
+.savedNewsLinkSavedArticles {
+  text-decoration: none;
 }
