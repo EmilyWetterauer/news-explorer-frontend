@@ -18,7 +18,8 @@
   top: 0;
   left: 0;
   height: 230px;
-  width: 320px;
+  width: 100%;
+  /* width: 320px; */
 }
 
 .dropDownModal__header {
@@ -41,6 +42,11 @@
   margin-bottom: 0px;
   margin: 0px;
   margin-left: 20px;
+  align-self: center;
+}
+
+.dropDownModal__logoLink {
+  text-decoration: none;
   align-self: center;
 }
 

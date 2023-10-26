@@ -45,7 +45,11 @@ const DropDownModal = ({
     <div className="dropDownModal__wrapper" onClick={onClose}>
       <div className="dropDownModal__container">
         <div className="dropDownModal__header">
-          <p className="dropDownModal__newsExplorer">NewsExplorer</p>
+          <Link to="/" className="dropDownModal__logoLink">
+            <p className="dropDownModal__newsExplorer" onClick={onClose}>
+              NewsExplorer
+            </p>
+          </Link>
           <img
             className="dropDownModal__closeButton"
             src={closeButton}
