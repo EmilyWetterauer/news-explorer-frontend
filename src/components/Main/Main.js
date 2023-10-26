@@ -245,7 +245,7 @@ const Main = () => {
 
         <Footer />
 
-        {activeModal === "dropDown" && screenWidth <= 320 && (
+        {activeModal === "dropDown" && screenWidth <= 620 && (
           <DropDownModal
             screenWidth={screenWidth}
             isLoggedIn={isLoggedIn}

@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .header__container {
     height: 56px;
   }
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .header__leftSideContainer {
     width: 117px;
     height: 57px;
@@ -65,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .header__rightSideContainer {
     margin: 0px;
     height: 57px;
@@ -80,7 +80,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .header__title {
     font-size: 16px;
     margin-bottom: 0px;
@@ -97,13 +97,13 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .header__titleSavedNews {
     margin-left: 20px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .header_title_hide {
     visibility: hidden;
   }

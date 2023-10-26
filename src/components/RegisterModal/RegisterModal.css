@@ -7,7 +7,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerModal__emailLabel {
     width: 90%;
   }
@@ -27,7 +27,7 @@
   opacity: 20%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerModal__emailField {
     width: 90%;
     margin-bottom: 20px;
@@ -43,7 +43,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerModal__passwordLabel {
     width: 90%;
   }
@@ -63,7 +63,7 @@
   opacity: 20%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerModal__passwordField {
     width: 90%;
     margin-bottom: 20px;
@@ -79,7 +79,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerModal__userNameLabel {
     width: 90%;
     display: none;
@@ -100,7 +100,7 @@
   opacity: 20%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerModal__userNameField {
     width: 90%;
     display: none;

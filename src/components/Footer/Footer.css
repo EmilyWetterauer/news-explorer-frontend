@@ -1,23 +1,28 @@
 .footer__container {
   display: flex;
   flex-direction: row;
+  /* justify-content: space-around; */
   justify-content: space-between;
   width: 100%;
+  /* width: auto; */
   align-items: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .footer__container {
     flex-direction: column-reverse;
   }
 }
+
 .footer__leftSideContainer {
   display: flex;
+  align-items: center;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #b6bcbf;
-  width: 433px;
+  /* width: 433px; */
+  /* padding-left: 100px; */
   margin-left: 100px;
 }
 
@@ -29,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .footer__leftSideContainer {
     margin-left: 0px;
     width: 100%;
@@ -40,7 +45,7 @@
 
 .footer__rightSideContainer {
   display: flex;
-  width: 433px;
+  /* width: 433px; */
   justify-content: end;
   align-items: center;
   margin-right: 100px;
@@ -53,7 +58,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .footer__rightSideContainer {
     width: 90%;
     margin-right: 0px;
@@ -103,7 +108,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .footer_tripleTen {
     margin-left: 0;
     margin-top: 0px;
@@ -118,7 +123,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .footer__githubIcon {
     margin-left: 0px;
   }
@@ -132,7 +137,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .footer__facebookIcon {
     margin-left: 0px;
   }
@@ -150,7 +155,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .tripleTenLink {
     margin-top: 0px;
   }
@@ -160,7 +165,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .githubLink {
     margin-left: 55px;
   }
@@ -170,7 +175,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .facebookLink {
     margin-left: 22px;
   }

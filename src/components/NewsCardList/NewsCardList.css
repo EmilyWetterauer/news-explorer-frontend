@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .newsCardList__header {
     font-size: 30px;
     margin: 30px 0px 35px 18px;

@@ -39,7 +39,7 @@ const DropDownModal = ({
     : "dropDownModal__profileButtonText";
 
   const iconSrc =
-    isSavedNews && screenWidth > 320 ? homeNewsIcon : savedNewsIcon;
+    isSavedNews && screenWidth > 620 ? homeNewsIcon : savedNewsIcon;
 
   return isLoggedIn ? (
     <div className="dropDownModal__wrapper" onClick={onClose}>

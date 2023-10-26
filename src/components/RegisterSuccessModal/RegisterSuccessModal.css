@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerSuccessModal__closeButton {
     top: -30px;
     right: 10px;
@@ -47,7 +47,7 @@
   color: #000;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerSuccessModal__title {
     width: 90%;
   }
@@ -61,7 +61,7 @@
   width: 350px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .registerSuccessModal__signInLink {
     width: 90%;
   }
