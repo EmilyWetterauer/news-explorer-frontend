@@ -51,16 +51,16 @@ const Navigation = ({
   const renderAuthorizedUsers = () => {
     const iconSrc = isSavedNews ? homeNewsIcon : savedNewsIcon;
 
-    return screenWidth > 620 ? (
+    return screenWidth > 320 ? (
       <>
-        <Link to="/" className="homepageLinkHome">
-          <p className={navigationHeader__homeClassName}>Home</p>
+        <Link to="/" className={navigationHeader__homeClassName}>
+          Home
         </Link>
         <Link
           to="/saved-news"
           className={navigationHeader__savedArticlesClassName}
         >
-          <p>Saved Articles</p>
+          Saved Articles
         </Link>
         <Link to="/">
           <button
@@ -99,9 +99,11 @@ const Navigation = ({
   };
 
   const renderNonAuthorizedUsers = () => {
-    return screenWidth > 620 ? (
+    return screenWidth > 320 ? (
       <>
-        <p className="navigationHeader__home">Home</p>
+        <Link to="/" className={navigationHeader__homeClassName}>
+          Home
+        </Link>
         <button
           className="navigationHeader__signInButton"
           onClick={handleSignInButtonClick}

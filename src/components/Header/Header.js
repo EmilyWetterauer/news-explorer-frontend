@@ -31,8 +31,8 @@ const Header = ({
   return (
     <header className="header__container">
       <div className="header__leftSideContainer">
-        <Link to="/" className="header__homepageLinkNewsExplorer">
-          <div className={header__titleClassName_hide}>NewsExplorer</div>
+        <Link to="/" className={header__titleClassName_hide}>
+          NewsExplorer
         </Link>
       </div>
       <div className="header__rightSideContainer">
