@@ -5,11 +5,15 @@ import useInputWithState from "../../utils/customHooks";
 import "./SearchForm.css";
 
 const SearchForm = ({ handleSearchButtonSubmit, showError }) => {
-  // const [queryString, setQueryString] = useState("");
   const [queryString, setQueryString] = useInputWithState("");
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    handleSearchButtonSubmit(queryString);
+  };
+
   return (
-    <div className="searchForm__container">
+    <form className="searchForm__container" onSubmit={handleSubmit}>
       <div>
         <h1 className="searchForm__headerQuestion">
           What's going on in the world?
@@ -21,25 +25,23 @@ const SearchForm = ({ handleSearchButtonSubmit, showError }) => {
       </div>
       <div className="searchForm__searchBarWrapper">
         <input
-          type="text"
-          // minlength="1"
+          // type="text"
           className="searchForm__searchBar"
           placeholder={showError ? "Please enter a keyword" : "Enter Topic"}
-          value={queryString}
-          // required
+          // value={queryString}
           onChange={setQueryString}
         />
         <button
-          onClick={() => {
-            handleSearchButtonSubmit(queryString);
-          }}
+          // onClick={() => {
+          //   handleSearchButtonSubmit(queryString);
+          // }}
           className="searchForm__searchBarButton"
-          type="submit"
+          // type="submit"
         >
           Search
         </button>
       </div>
-    </div>
+    </form>
   );
 };
 export default SearchForm;
