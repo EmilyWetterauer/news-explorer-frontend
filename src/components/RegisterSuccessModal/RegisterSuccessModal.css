@@ -1,4 +1,4 @@
-.registerSuccessModal__wrapper {
+/* .registerSuccessModal__wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,9 +9,9 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
-}
+} */
 
-.registerSuccessModal__container {
+/* .registerSuccessModal__container {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -20,26 +20,26 @@
   height: 182px;
   background-color: #fff;
   border-radius: 16px;
-}
+} */
 
-.registerSuccessModal__closeButton {
+/* .registerSuccessModal__closeButton {
   display: flex;
   position: absolute;
   top: -40px;
   right: -40px;
   cursor: pointer;
-}
+} */
 
-@media screen and (max-width: 620px) {
+/* @media screen and (max-width: 320px) {
   .registerSuccessModal__closeButton {
     top: -30px;
     right: 10px;
     height: 24px;
     width: 24px;
   }
-}
+} */
 
-.registerSuccessModal__title {
+/* .registerSuccessModal__title {
   width: 350px;
   font-family: Roboto, sans-serif;
   font-weight: 900;
@@ -47,11 +47,11 @@
   color: #000;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerSuccessModal__title {
     width: 90%;
   }
-}
+} */
 
 .registerSuccessModal__signInLink {
   color: #2f71e5;
@@ -61,7 +61,7 @@
   width: 350px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerSuccessModal__signInLink {
     width: 90%;
   }

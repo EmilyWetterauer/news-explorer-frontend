@@ -6,27 +6,35 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer__container">
-      <a href="https://newsapi.org/" className="newsApiLink">
-        <div className="footer__leftSideContainer">
+    <footer className="footer__container">
+      <div className="footer__leftSideContainer">
+        <a href="https://newsapi.org/" className="newsApiLink" target="_blank">
           © 2023 SuperSite, Powered by NewsAPI
-        </div>
-      </a>
-      <div className="footer__rightSideContainer">
-        <Link to="/" className="homepageLinkHome">
-          <p className="footer_home">Home</p>
-        </Link>
-        <a href="https://www.tripleten.com" className="tripleTenLink">
-          <p className="footer_tripleTen">TripleTen</p>
-        </a>
-        <a href="https://github.com" className="githubLink">
-          <div className="footer__githubIcon"></div>
-        </a>
-        <a href="https://facebook.com" className="facebookLink">
-          <div className="footer__facebookIcon"></div>
         </a>
       </div>
-    </div>
+      <div className="footer__rightSideContainer">
+        <Link to="/" className="footer_home">
+          Home
+        </Link>
+        <a
+          href="https://www.tripleten.com"
+          className="footer_tripleTen"
+          target="_blank"
+        >
+          TripleTen
+        </a>
+        <a
+          href="https://github.com"
+          className="footer__githubIcon"
+          target="_blank"
+        ></a>
+        <a
+          href="https://facebook.com"
+          className="footer__facebookIcon"
+          target="_blank"
+        ></a>
+      </div>
+    </footer>
   );
 };
 

@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .footer__container {
     flex-direction: column-reverse;
   }
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .footer__leftSideContainer {
     margin-left: 0px;
     width: 100%;
@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .footer__rightSideContainer {
     width: 90%;
     margin-right: 0px;
@@ -69,23 +69,24 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
+}
 
-  .homepageLinkHome {
+/* .homepageLinkHome {
     grid-area: 1 / 1 / 2 / 2;
-  }
+  } */
 
-  .tripleTenLink {
+/* .tripleTenLink {
     grid-area: 2 / 1 / 3 / 2;
-  }
+  } */
 
-  .githubLink {
+/* .githubLink {
     grid-area: 1 / 4 / 2 / 5;
-  }
+  } */
 
-  .facebookLink {
+/* .facebookLink {
     grid-area: 1 / 5 / 2 / 6;
   }
-}
+} */
 
 .footer_home {
   color: #1a1b22;
@@ -95,6 +96,13 @@
   width: 49px;
   height: 24px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__home {
+    grid-area: 1 / 1 / 2 / 2;
+  }
 }
 
 .footer_tripleTen {
@@ -106,10 +114,12 @@
   height: 24px;
   margin-left: 25px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .footer_tripleTen {
+    grid-area: 2 / 1 / 3 / 2;
     margin-left: 0;
     margin-top: 0px;
   }
@@ -123,8 +133,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .footer__githubIcon {
+    grid-area: 1 / 4 / 2 / 5;
     margin-left: 0px;
   }
 }
@@ -137,8 +148,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .footer__facebookIcon {
+    grid-area: 1 / 5 / 2 / 6;
     margin-left: 0px;
   }
 }
@@ -155,7 +167,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .tripleTenLink {
     margin-top: 0px;
   }
@@ -165,7 +177,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .githubLink {
     margin-left: 55px;
   }
@@ -175,7 +187,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .facebookLink {
     margin-left: 22px;
   }

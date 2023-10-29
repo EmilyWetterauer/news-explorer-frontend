@@ -11,9 +11,11 @@ const SignInModal = ({ onClose, handleAlternateButtonClick, handleSubmit }) => {
       buttonLabel="Sign in"
       alternateButtonLabel="Sign up"
       formSize="small"
+      formTitle="signIn"
       onClose={onClose}
       handleAlternateButtonClick={handleAlternateButtonClick}
       handleSubmit={handleSubmit}
+      isForm
     >
       <label className="signInModal__emailLabel">Email</label>
       <input

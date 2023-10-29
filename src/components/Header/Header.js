@@ -24,7 +24,9 @@ const Header = ({
     : "header__title";
 
   const header__titleClassName_hide =
-    activeModal === "signIn" || activeModal === "register"
+    activeModal === "signIn" ||
+    activeModal === "register" ||
+    activeModal === "registerSuccess"
       ? `${header__titleClassName} header_title_hide`
       : `${header__titleClassName}`;
 

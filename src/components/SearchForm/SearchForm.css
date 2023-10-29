@@ -13,7 +13,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .searchForm__container {
     height: 480px;
   }
@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .searchForm__headerQuestion {
     width: 285px;
     height: 80px;
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .searchForm__statement {
     width: 288px;
     height: 72px;
@@ -76,7 +76,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .searchForm__searchBarWrapper {
     flex-direction: column;
     margin-bottom: 0px;
@@ -100,7 +100,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .searchForm__searchBar {
     width: 288px;
     height: 56px;
@@ -142,7 +142,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .searchForm__searchBarButton {
     width: 288px;
     height: 56px;

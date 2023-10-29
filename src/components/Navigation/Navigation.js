@@ -84,9 +84,11 @@ const Navigation = ({
   const renderDropDownButton = () => {
     return showDropDown ? (
       <div>
-        <img onClick={handleClick} src={closeButton} alt="Close Button" />
+        <button onClick={handleClick} src={closeButton} alt="Close Button" />
       </div>
-    ) : activeModal !== "signIn" && activeModal !== "register" ? (
+    ) : activeModal !== "signIn" &&
+      activeModal !== "register" &&
+      activeModal !== "registerSuccess" ? (
       <div>
         <img
           className="navigationHeader__hamburgerIcon"

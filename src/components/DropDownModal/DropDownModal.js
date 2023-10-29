@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link, useLocation } from "react-router-dom";
 
-import closeButton from "../../images/close.svg";
+// import closeButton from "../../images/close.svg";
 
 import homeNewsIcon from "../../images/Union.svg";
 
@@ -39,37 +39,35 @@ const DropDownModal = ({
     : "dropDownModal__profileButtonText";
 
   const iconSrc =
-    isSavedNews && screenWidth > 620 ? homeNewsIcon : savedNewsIcon;
+    isSavedNews && screenWidth > 320 ? homeNewsIcon : savedNewsIcon;
 
   return isLoggedIn ? (
     <div className="dropDownModal__wrapper" onClick={onClose}>
       <div className="dropDownModal__container">
         <div className="dropDownModal__header">
-          <Link to="/" className="dropDownModal__logoLink">
-            <p className="dropDownModal__newsExplorer" onClick={onClose}>
-              NewsExplorer
-            </p>
+          <Link
+            to="/"
+            className="dropDownModal__newsExplorer"
+            onClick={onClose}
+          >
+            NewsExplorer
           </Link>
-          <img
+          <button
             className="dropDownModal__closeButton"
-            src={closeButton}
+            // src={closeButton}
             onClick={onClose}
             alt="close button"
-          ></img>
+          ></button>
         </div>
-        <Link to="/" className="dropDownModal__homeLinkLoggedIn">
-          <p className={dropDownModal__homeClassName} onClick={onClose}>
-            Home
-          </p>
+        <Link to="/" className={dropDownModal__homeClassName} onClick={onClose}>
+          Home
         </Link>
         <Link
           to="/saved-news"
-          className="savedNewsLinkSavedArticles"
+          className={dropDownModal__savedArticlesClassName}
           onClick={handleSavedArticlesClick}
         >
-          <p className={dropDownModal__savedArticlesClassName}>
-            Saved Articles
-          </p>
+          Saved Articles
         </Link>
         <Link to="/" className="dropDownModal__buttonLink">
           <button
@@ -90,13 +88,15 @@ const DropDownModal = ({
     <div className="dropDownModal__wrapper" onClick={onClose}>
       <div className="dropDownModal__container">
         <div className="dropDownModal__header">
-          <p className="dropDownModal__newsExplorer">NewsExplorer</p>
-          <img
+          <Link to="/" className="dropDownModal__newsExplorer">
+            NewsExplorer
+          </Link>
+          <button
             className="dropDownModal__closeButton"
-            src={closeButton}
+            // src={closeButton}
             onClick={onClose}
             alt="close button"
-          ></img>
+          ></button>
         </div>
         <div className="dropDownModal__body">
           <p className="dropDownModal__home" onClick={onClose}>

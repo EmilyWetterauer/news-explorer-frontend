@@ -24,8 +24,8 @@ const NewsCardList = ({
 
   return (
     <div className="newsCardList__container">
-      <p className="newsCardList__header">Search Results</p>
-      <div className="newsCardList__newsCardsContainer">
+      <h2 className="newsCardList__header">Search Results</h2>
+      <ul className="newsCardList__newsCardsContainer">
         {searchResults.map((result, index) => {
           if (index >= cardsToShow) {
             return null;
@@ -44,7 +44,7 @@ const NewsCardList = ({
             />
           );
         })}
-      </div>
+      </ul>
       {cardsToShow < searchResults.length && (
         <button
           className="newsCardList__showMoreButton"

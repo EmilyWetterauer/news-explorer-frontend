@@ -7,7 +7,7 @@ const About = () => {
     <div className="about__container">
       <div className="about__avatarImage"></div>
       <div className="about__textContainer">
-        <h1 className="about__headerText">About the author</h1>
+        <h2 className="about__headerText">About the author</h2>
         <p className="about__paragraphText">
           This block describes the project author. Here you should indicate your
           name, what you do, and which development technologies you know.

@@ -2,7 +2,9 @@ import React from "react";
 
 import "./RegisterSuccessModal.css";
 
-import closeButton from "../../images/close.svg";
+// import closeButton from "../../images/close.svg";
+
+import PopupWithForm from "../PopupWithForm/PopupWithForm";
 
 const RegisterSuccessModal = ({ onClose, handleSignInButtonClick }) => {
   React.useEffect(() => {
@@ -14,19 +16,21 @@ const RegisterSuccessModal = ({ onClose, handleSignInButtonClick }) => {
   }, [onClose]);
 
   return (
-    <div className="registerSuccessModal__wrapper" onClick={onClose}>
-      <div className="registerSuccessModal__container">
-        <img
-          className="registerSuccessModal__closeButton"
-          src={closeButton}
-          onClick={onClose}
-        ></img>
-        <h1 className="registerSuccessModal__title">
-          Registration successfully completed!
-        </h1>
-        <a className="registerSuccessModal__signInLink" onClick={handleSignInButtonClick}>Sign in</a>
-      </div>
-    </div>
+    <PopupWithForm
+      onClose={onClose}
+      formSize="extraSmall"
+      formTitle="registerSuccess"
+      formCloseButton="registerSuccess"
+      title="Registration successfully completed!"
+      buttonLabel="Sign in"
+    >
+      <a
+        className="registerSuccessModal__signInLink"
+        onClick={handleSignInButtonClick}
+      >
+        Sign in
+      </a>
+    </PopupWithForm>
   );
 };
 

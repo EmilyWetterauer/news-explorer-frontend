@@ -19,23 +19,24 @@ const RegisterModal = ({
       onClose={onClose}
       handleAlternateButtonClick={handleAlternateButtonClick}
       handleSubmit={handleSubmit}
+      isForm
     >
       <label className="registerModal__emailLabel">Email</label>
       <input
         className="registerModal__emailField"
-        placeholder="Email"
+        placeholder="Enter email"
         required
       ></input>
       <label className="registerModal__passwordLabel">Password</label>
       <input
         className="registerModal__passwordField"
-        placeholder="Password"
+        placeholder="Enter password"
         required
       ></input>
       <label className="registerModal__userNameLabel">Username</label>
       <input
         className="registerModal__userNameField"
-        placeholder="Username"
+        placeholder="Enter your username"
         required
       ></input>
     </PopupWithForm>

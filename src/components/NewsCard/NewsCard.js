@@ -65,7 +65,7 @@ const NewsCard = ({
   };
 
   return (
-    <div className="newsCard__cardContainer">
+    <article className="newsCard__cardContainer">
       <div
         className="newsCard__imageContainer"
         onMouseEnter={handleMouseEnter}
@@ -116,7 +116,7 @@ const NewsCard = ({
           {card.source.name.toUpperCase()}
         </p>
       </div>
-    </div>
+    </article>
   );
 };
 

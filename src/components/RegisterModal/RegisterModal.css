@@ -5,9 +5,10 @@
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerModal__emailLabel {
     width: 90%;
   }
@@ -20,14 +21,15 @@
   font-weight: 400;
   color: #000;
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .registerModal__emailField::placeholder {
   opacity: 20%;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerModal__emailField {
     width: 90%;
     margin-bottom: 20px;
@@ -41,9 +43,10 @@
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerModal__passwordLabel {
     width: 90%;
   }
@@ -56,14 +59,15 @@
   font-weight: 400;
   color: #000;
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
 }
 
 .registerModal__passwordField::placeholder {
   opacity: 20%;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerModal__passwordField {
     width: 90%;
     margin-bottom: 20px;
@@ -77,9 +81,10 @@
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerModal__userNameLabel {
     width: 90%;
     display: none;
@@ -93,14 +98,15 @@
   font-weight: 400;
   color: #000;
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .registerModal__userNameField::placeholder {
   opacity: 20%;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .registerModal__userNameField {
     width: 90%;
     display: none;

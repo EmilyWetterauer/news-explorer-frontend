@@ -7,7 +7,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .about__container {
     flex-direction: column;
   }
@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .about__avatarImage {
     height: 85vw;
     width: 85vw;
@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .about__textContainer {
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .about__headerText {
     font-size: 30px;
     margin: 0px;
@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .about__paragraphText {
     margin: 0px;
     margin-bottom: 20px;

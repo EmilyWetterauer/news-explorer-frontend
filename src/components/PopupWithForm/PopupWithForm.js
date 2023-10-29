@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./PopupWithForm.css";
 
-import closeButton from "../../images/close.svg";
+// import closeButton from "../../images/close.svg";
 
 const PopupWithForm = ({
   children,
@@ -10,9 +10,12 @@ const PopupWithForm = ({
   buttonLabel,
   alternateButtonLabel,
   formSize,
+  formTitle,
+  formCloseButton,
   onClose,
   handleAlternateButtonClick,
   handleSubmit,
+  isForm,
 }) => {
   React.useEffect(() => {
     document.addEventListener("keydown", onClose);
@@ -30,25 +33,32 @@ const PopupWithForm = ({
   return (
     <div className="popupWithForm__wrapper" onClick={onClose}>
       <form className={`popupWithForm__form ${formSize}`}>
-        <h1 className="popupWithForm__title">{title}</h1>
-        <img
-          className="popupWithForm__closeButton"
-          src={closeButton}
+        <h1 className={`popupWithForm__title ${formTitle}`}>{title}</h1>
+        <button
+          className={`popupWithForm__closeButton ${formCloseButton}`}
+          // src={closeButton}
           onClick={onClose}
         />
         {children}
-        <button className="popupWithForm__submitButton" onClick={handleClick}>
-          {buttonLabel}
-        </button>
-        <div className="popupWithForm__signInText">
-          {"or "}
-          <a
-            className="popupWithForm__SignInLink"
-            onClick={handleAlternateButtonClick}
-          >
-            {alternateButtonLabel}
-          </a>
-        </div>
+        {isForm && (
+          <>
+            <button
+              className="popupWithForm__submitButton"
+              onClick={handleClick}
+            >
+              {buttonLabel}
+            </button>
+            <div className="popupWithForm__signInText">
+              {"or "}
+              <a
+                className="popupWithForm__SignInLink"
+                onClick={handleAlternateButtonClick}
+              >
+                {alternateButtonLabel}
+              </a>
+            </div>
+          </>
+        )}
       </form>
     </div>
   );

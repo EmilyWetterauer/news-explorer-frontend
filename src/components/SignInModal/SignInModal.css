@@ -5,9 +5,10 @@
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .signInModal__emailLabel {
     width: 90%;
   }
@@ -20,14 +21,15 @@
   font-weight: 400;
   color: #000;
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
 }
 
 .signInModal__emailInput::placeholder {
   opacity: 20%;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .signInModal__emailInput {
     width: 90%;
     margin-bottom: 25px;
@@ -41,9 +43,10 @@
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .signInModal__passwordLabel {
     width: 90%;
   }
@@ -56,14 +59,15 @@
   font-weight: 400;
   color: #000;
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
 }
 
 .signInModal__passwordInput::placeholder {
   opacity: 20%;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   .signInModal__passwordInput {
     width: 90%;
   }
