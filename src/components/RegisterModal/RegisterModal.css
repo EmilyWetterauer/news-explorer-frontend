@@ -11,6 +11,7 @@
 @media screen and (max-width: 320px) {
   .registerModal__emailLabel {
     width: 90%;
+    margin-bottom: 0px;
   }
 }
 
@@ -23,10 +24,19 @@
   border: none;
   margin-bottom: 35px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 7px;
+  /* line-height: 40; */
+  outline: none;
+}
+
+.registerModal__emailField:focus {
+  border-color: #000;
 }
 
 .registerModal__emailField::placeholder {
   opacity: 20%;
+  /* line-height: 1; */
+  /* padding-top: 5px; */
 }
 
 @media screen and (max-width: 320px) {
@@ -49,6 +59,7 @@
 @media screen and (max-width: 320px) {
   .registerModal__passwordLabel {
     width: 90%;
+    margin-bottom: 0px;
   }
 }
 
@@ -61,6 +72,12 @@
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 35px;
+  padding-bottom: 7px;
+  outline: none;
+}
+
+.registerModal__passwordField:focus {
+  border-color: #000;
 }
 
 .registerModal__passwordField::placeholder {
@@ -70,7 +87,7 @@
 @media screen and (max-width: 320px) {
   .registerModal__passwordField {
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -100,6 +117,12 @@
   border: none;
   margin-bottom: 40px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 7px;
+  outline: none;
+}
+
+.registerModal__userNameField:focus {
+  border-color: #000;
 }
 
 .registerModal__userNameField::placeholder {
