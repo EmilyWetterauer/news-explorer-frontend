@@ -196,7 +196,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .navigationHeader__hamburgerIcon {
     align-self: center;
     height: 24px;

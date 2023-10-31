@@ -32,12 +32,14 @@ const Header = ({
 
   return (
     <header className="header__container">
-      <div className="header__leftSideContainer">
+      <nav className="header__leftSideContainer">
+        {/* <nav> */}
         <Link to="/" className={header__titleClassName_hide}>
           NewsExplorer
         </Link>
-      </div>
-      <div className="header__rightSideContainer">
+        {/* </nav> */}
+      </nav>
+      <nav className="header__rightSideContainer">
         <Navigation
           handleSignInButtonClick={handleSignInButtonClick}
           isLoggedIn={isLoggedIn}
@@ -48,7 +50,7 @@ const Header = ({
           activeModal={activeModal}
           screenWidth={screenWidth}
         />
-      </div>
+      </nav>
     </header>
   );
 };

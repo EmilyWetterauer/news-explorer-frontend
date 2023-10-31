@@ -11,7 +11,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__wrapper {
     top: 45px;
     background-color: #fff;
@@ -25,7 +25,6 @@
 .popupWithForm__form.small {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
   position: relative;
   width: 430px;
@@ -35,14 +34,11 @@
   z-index: 999;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__form.small {
-    /* justify-content: flex-start; */
     gap: 15px;
     width: 100%;
-    /* width: 320px; */
     min-height: 100vh;
-    /* min-height: 90vh; */
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 0px;
@@ -53,9 +49,7 @@
 .popupWithForm__form.medium {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* justify-content: space-around; */
-  /* justify-content: flex-start; */
+
   align-items: center;
   position: relative;
   width: 430px;
@@ -64,11 +58,11 @@
   border-radius: 16px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__form.medium {
     justify-content: flex-start;
     gap: 15px;
-    width: 320px;
+    width: 498px;
     min-height: 100vh;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
@@ -88,7 +82,7 @@
   border-radius: 16px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__form.extraSmall {
     min-height: 100vh;
   }
@@ -97,8 +91,7 @@
 .popupWithForm__title {
   width: 84%;
   margin: 40px 0px 0px 0px;
-  /* margin-left: 60px; */
-  /* height: 32px; */
+
   color: #1a1b22;
   font-family: Roboto, sans-serif;
   font-size: 24px;
@@ -109,14 +102,14 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__title.registerSuccess {
     font-size: 20px;
     margin: 15px 0px 15px 0px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__title {
     color: #000;
     width: 90%;
@@ -145,24 +138,20 @@
   top: -125px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__closeButton.registerSuccess {
     top: -35px;
     right: 15px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__closeButton {
     height: 24px;
     width: 24px;
     position: absolute;
-    /* left: auto; */
-    /* top: -40px; */
     top: -35px;
     right: 15px;
-    /* right: 200px; */
-    /* top: -10px; */
   }
 }
 
@@ -181,7 +170,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__submitButton {
     width: 288px;
     border: none;
@@ -202,7 +191,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .popupWithForm__signInText {
     width: 90%;
   }

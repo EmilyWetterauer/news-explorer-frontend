@@ -14,7 +14,7 @@ const SearchForm = ({ handleSearchButtonSubmit, showError }) => {
 
   return (
     <form className="searchForm__container" onSubmit={handleSubmit}>
-      <div>
+      <div className="searchForm__textContainer">
         <h1 className="searchForm__headerQuestion">
           What's going on in the world?
         </h1>
@@ -25,21 +25,11 @@ const SearchForm = ({ handleSearchButtonSubmit, showError }) => {
       </div>
       <div className="searchForm__searchBarWrapper">
         <input
-          // type="text"
           className="searchForm__searchBar"
           placeholder={showError ? "Please enter a keyword" : "Enter Topic"}
-          // value={queryString}
           onChange={setQueryString}
         />
-        <button
-          // onClick={() => {
-          //   handleSearchButtonSubmit(queryString);
-          // }}
-          className="searchForm__searchBarButton"
-          // type="submit"
-        >
-          Search
-        </button>
+        <button className="searchForm__searchBarButton">Search</button>
       </div>
     </form>
   );

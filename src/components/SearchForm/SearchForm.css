@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* height: 576px; */
   height: 475px;
 }
 
@@ -13,7 +12,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .searchForm__container {
     height: 480px;
   }
@@ -21,12 +20,11 @@
 
 .searchForm__headerQuestion {
   height: 128px;
-  width: 608px;
+  width: 508px;
   color: #fff;
   font-family: "Roboto Slab", serif;
   font-size: 60px;
   margin-top: 0px;
-  /* margin-top: 100px; */
 }
 
 @media screen and (max-width: 768px) {
@@ -38,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .searchForm__headerQuestion {
     width: 285px;
     height: 80px;
@@ -63,7 +61,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .searchForm__statement {
     width: 288px;
     height: 72px;
@@ -76,7 +74,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .searchForm__searchBarWrapper {
     flex-direction: column;
     margin-bottom: 0px;
@@ -84,7 +82,7 @@
 }
 
 .searchForm__searchBar {
-  width: 608px;
+  width: 588px;
   height: 64px;
   border-radius: 35px;
   padding: 0px 0px 0px 20px;
@@ -93,14 +91,15 @@
 
 @media screen and (max-width: 768px) {
   .searchForm__searchBar {
-    width: 452px;
+    width: 432px;
     height: 56px;
     padding: 0px 0px 0px 20px;
     text-align: start;
+    color: #b6bcbf;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .searchForm__searchBar {
     width: 288px;
     height: 56px;
@@ -116,9 +115,6 @@
 
 .searchForm__searchBar::placeholder {
   font-family: Roboto, sans-serif;
-}
-
-.searchForm__inputError {
 }
 
 .searchForm__searchBarButton {
@@ -142,7 +138,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 498px) {
   .searchForm__searchBarButton {
     width: 288px;
     height: 56px;
