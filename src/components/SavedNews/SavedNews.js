@@ -17,12 +17,14 @@ const SavedNews = ({
     <div className="savedNews__container">
       <div className="savedNews__newsCardsContainer">
         {savedArticles.map((result) => {
+          const uniqueKey = result.source._id + result.url;
+
           return (
             <NewsCard
               isLoggedIn={isLoggedIn}
               setSearchResults={setSearchResults}
               card={result}
-              key={result._id}
+              key={uniqueKey}
               isSaved={true}
               USER={USER}
               savedArticles={savedArticles}

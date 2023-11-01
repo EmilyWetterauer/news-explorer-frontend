@@ -30,10 +30,11 @@ const NewsCardList = ({
           if (index >= cardsToShow) {
             return null;
           }
+          const uniqueKey = result.source.id + result.url;
           return (
             <NewsCard
               card={result}
-              key={result.id}
+              key={uniqueKey}
               isLoggedIn={isLoggedIn}
               setSearchResults={setSearchResults}
               handleSignInButtonClick={handleSignInButtonClick}
