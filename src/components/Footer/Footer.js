@@ -12,7 +12,12 @@ const Footer = () => {
   return (
     <footer className="footer__container">
       <div className="footer__leftSideContainer">
-        <a href="https://newsapi.org/" className="newsApiLink" target="_blank">
+        <a
+          href="https://newsapi.org/"
+          className="newsApiLink"
+          target="_blank"
+          rel="noreferrer"
+        >
           © 2023 SuperSite, Powered by NewsAPI
         </a>
       </div>
@@ -28,6 +33,7 @@ const Footer = () => {
               href="https://www.tripleten.com"
               className="footer__rightTextLink"
               target="_blank"
+              rel="noreferrer"
             >
               TripleTen
             </a>
@@ -39,6 +45,7 @@ const Footer = () => {
               href="https://github.com"
               className="footer__rightImageLink"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={githubIcon} alt="Github" />
             </a>
@@ -48,6 +55,7 @@ const Footer = () => {
               href="https://facebook.com"
               className="footer__rightImageLink"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={facebookIcon} alt="Facebook" />
             </a>

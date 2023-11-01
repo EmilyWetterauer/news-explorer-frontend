@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Route, Redirect, BrowserRouter, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 import Header from "../Header/Header";
 import SearchForm from "../SearchForm/SearchForm";
@@ -64,7 +64,7 @@ import "./Main.css";
 //     likes: [],
 //   },
 // ];
-const USER_ID = 1;
+// const USER_ID = 1;
 const USER = {
   _id: 1,
   name: "Emma",

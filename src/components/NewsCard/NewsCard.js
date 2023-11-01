@@ -14,7 +14,6 @@ const NewsCard = ({
   keyword,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [leaveTimer, setLeaveTimer] = useState(null);
 
   const isLiked = savedArticles.some((article) => {
     return article.title === card.title;
@@ -99,7 +98,11 @@ const NewsCard = ({
             )}
           </div>
         </div>
-        <img className="newsCard__image" src={card.urlToImage}></img>
+        <img
+          className="newsCard__image"
+          src={card.urlToImage}
+          alt="searched news topic"
+        ></img>
       </div>
       <div className="newsCard__textContainer">
         <p className="newsCard__dateText" type="text">

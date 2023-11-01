@@ -1,5 +1,5 @@
 // export const baseUrl = "http://localhost:3001";
-import { apiKey } from "../utils/constants";
+// import { apiKey } from "../utils/constants";
 
 export const baseUrl = `https://newsapi.org/v2`;
 

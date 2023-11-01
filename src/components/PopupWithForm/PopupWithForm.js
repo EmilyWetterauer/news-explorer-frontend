@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./PopupWithForm.css";
 
@@ -50,12 +50,12 @@ const PopupWithForm = ({
             </button>
             <div className="popupWithForm__signInText">
               {"or "}
-              <a
+              <button
                 className="popupWithForm__SignInLink"
                 onClick={handleAlternateButtonClick}
               >
                 {alternateButtonLabel}
-              </a>
+              </button>
             </div>
           </>
         )}

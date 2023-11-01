@@ -24,12 +24,12 @@ const RegisterSuccessModal = ({ onClose, handleSignInButtonClick }) => {
       title="Registration successfully completed!"
       buttonLabel="Sign in"
     >
-      <a
+      <button
         className="registerSuccessModal__signInLink"
         onClick={handleSignInButtonClick}
       >
         Sign in
-      </a>
+      </button>
     </PopupWithForm>
   );
 };
