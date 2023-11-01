@@ -65,7 +65,7 @@
   }
 }
 
-.newsCardList__signInButton {
+.newsCard__signInButton {
   position: absolute;
   margin-top: 0px;
   top: 1px;
@@ -84,12 +84,12 @@
   background-color: orange;
 }
 
-.newsCardList__signInButton:hover {
+.newsCard__signInButton:hover {
   cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-  .newsCardList__signInButton {
+  .newsCard__signInButton {
     width: 164px;
     top: 0px;
   }

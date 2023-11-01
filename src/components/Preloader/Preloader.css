@@ -4,30 +4,21 @@
   background-color: #f5f6f7;
   display: flex;
   position: relative;
-  /* justify-content: center; */
-  /* align-items: center; */
   text-align: center;
 }
 
 .preloader__circle-preloader {
   display: flex;
-  /* width: 50px; */
   width: 74px;
-  /* height: 50px; */
   height: 74px;
   border: 4px solid #444;
   border-bottom-color: #888;
-
   border-radius: 50%;
-
   position: absolute;
   top: 25%;
-  /* top: 200px; */
   left: 0;
   right: 0;
-  /* bottom: 0; */
   margin: auto;
-
   animation: spin 0.75s infinite linear;
 }
 
@@ -45,10 +36,8 @@
   font-size: 18px;
   color: #b6bcbf;
   position: absolute;
-  /* top: 400px; */
   top: 60%;
   left: 0;
   right: 0;
-  /* bottom: 0; */
   margin: auto;
 }

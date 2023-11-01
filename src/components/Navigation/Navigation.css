@@ -1,4 +1,4 @@
-.navigationHeader__home {
+.navigation__home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,13 +15,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__home {
+  .navigation__home {
     height: 66px;
     font-size: 16px;
   }
 }
 
-.navigationHeader__homeSavedNews {
+.navigation__homeSavedNews {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,12 +37,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__homeSavedNews {
+  .navigation__homeSavedNews {
     height: 66px;
   }
 }
 
-.navigationHeader__savedArticles {
+.navigation__savedArticles {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__savedArticles {
+  .navigation__savedArticles {
     font-size: 16px;
     width: 160px;
     height: 66px;
@@ -69,7 +69,7 @@
   }
 }
 
-.navigationHeader__savedArticlesSavedNews {
+.navigation__savedArticlesSavedNews {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,12 +89,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__savedArticlesSavedNews {
+  .navigation__savedArticlesSavedNews {
     height: 66px;
   }
 }
 
-.navigationHeader__profileButton {
+.navigation__profileButton {
   width: 112px;
   height: 48px;
   border: solid #fff 1px;
@@ -108,14 +108,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__profileButton {
+  .navigation__profileButton {
     width: 100px;
     height: 40px;
     margin-left: 0px;
   }
 }
 
-.navigationHeader__profileButtonSavedNews {
+.navigation__profileButtonSavedNews {
   width: 112px;
   height: 48px;
   border: solid #1a1b22 1px;
@@ -129,13 +129,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__profileButtonSavedNews {
+  .navigation__profileButtonSavedNews {
     width: 100px;
     height: 40px;
   }
 }
 
-.navigationHeader__profileButtonText {
+.navigation__profileButtonText {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -143,12 +143,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__profileButtonText {
+  .navigation__profileButtonText {
     font-size: 16px;
   }
 }
 
-.navigationHeader__profileButtonTextSavedNews {
+.navigation__profileButtonTextSavedNews {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -156,12 +156,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__profileButtonTextSavedNews {
+  .navigation__profileButtonTextSavedNews {
     font-size: 16px;
   }
 }
 
-.navigationHeader__signInButton {
+.navigation__signInButton {
   width: 176px;
   height: 48px;
   border: solid #fff 1px;
@@ -175,29 +175,29 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navigationHeader__signInButton {
+  .navigation__signInButton {
     height: 40px;
     width: 152px;
   }
 }
 
-.navigationHeader__signInButtonText {
+.navigation__signInButtonText {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #fff;
 }
 
-.navigationHeader__hamburgerIcon {
+.navigation__hamburgerIcon {
   margin-right: 20px;
 }
 
-.navigationHeader__hamburgerIcon:hover {
+.navigation__hamburgerIcon:hover {
   cursor: pointer;
 }
 
 @media screen and (max-width: 498px) {
-  .navigationHeader__hamburgerIcon {
+  .navigation__hamburgerIcon {
     align-self: center;
     height: 24px;
     width: 24px;

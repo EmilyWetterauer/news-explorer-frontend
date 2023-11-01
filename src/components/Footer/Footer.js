@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer__leftSideContainer">
         <a
           href="https://newsapi.org/"
-          className="newsApiLink"
+          className="footer__newsApiLink"
           target="_blank"
           rel="noreferrer"
         >

@@ -82,7 +82,7 @@ const NewsCard = ({
           >
             {!isLoggedIn && isHovered && (
               <button
-                className="newsCardList__signInButton"
+                className="newsCard__signInButton"
                 onClick={handleSignInButtonClick}
               >
                 Sign in to save articles
@@ -90,7 +90,7 @@ const NewsCard = ({
             )}
             {isLoggedIn && isSaved && isHovered && (
               <button
-                className="newsCardList__signInButton"
+                className="newsCard__signInButton"
                 onClick={handleSaveClick}
               >
                 Remove from saved

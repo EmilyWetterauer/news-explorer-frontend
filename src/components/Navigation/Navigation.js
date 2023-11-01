@@ -32,45 +32,40 @@ const Navigation = ({
 
   const isSavedNews = location.pathname === "/saved-news";
 
-  const navigationHeader__homeClassName = isSavedNews
-    ? "navigationHeader__homeSavedNews"
-    : "navigationHeader__home";
+  const navigation__homeClassName = isSavedNews
+    ? "navigation__homeSavedNews"
+    : "navigation__home";
 
-  const navigationHeader__profileButtonClassName = isSavedNews
-    ? "navigationHeader__profileButtonSavedNews"
-    : "navigationHeader__profileButton";
+  const navigation__profileButtonClassName = isSavedNews
+    ? "navigation__profileButtonSavedNews"
+    : "navigation__profileButton";
 
-  const navigationHeader__profileButtonTextClassName = isSavedNews
-    ? "navigationHeader__profileButtonTextSavedNews"
-    : "navigationHeader__profileButtonText";
+  const navigation__profileButtonTextClassName = isSavedNews
+    ? "navigation__profileButtonTextSavedNews"
+    : "navigation__profileButtonText";
 
-  const navigationHeader__savedArticlesClassName = isSavedNews
-    ? "navigationHeader__savedArticlesSavedNews"
-    : "navigationHeader__savedArticles";
+  const navigation__savedArticlesClassName = isSavedNews
+    ? "navigation__savedArticlesSavedNews"
+    : "navigation__savedArticles";
 
   const renderAuthorizedUsers = () => {
     const iconSrc = isSavedNews ? homeNewsIcon : savedNewsIcon;
 
     return screenWidth > 498 ? (
       <>
-        <Link to="/" className={navigationHeader__homeClassName}>
+        <Link to="/" className={navigation__homeClassName}>
           Home
         </Link>
-        <Link
-          to="/saved-news"
-          className={navigationHeader__savedArticlesClassName}
-        >
+        <Link to="/saved-news" className={navigation__savedArticlesClassName}>
           Saved Articles
         </Link>
         <Link to="/">
           <button
-            className={navigationHeader__profileButtonClassName}
+            className={navigation__profileButtonClassName}
             onClick={handleLogout}
           >
-            <span className={navigationHeader__profileButtonTextClassName}>
-              Emma
-            </span>
-            <span className="navigationHeader__profileButtonIcon">
+            <span className={navigation__profileButtonTextClassName}>Emma</span>
+            <span className="navigation__profileButtonIcon">
               <img src={iconSrc} alt="arrowImage" />
             </span>
           </button>
@@ -91,7 +86,7 @@ const Navigation = ({
       activeModal !== "registerSuccess" ? (
       <div>
         <img
-          className="navigationHeader__hamburgerIcon"
+          className="navigation__hamburgerIcon"
           onClick={handleDropDownClick}
           src={isSavedNews ? hamburgerIconBlack : hamburgerIconWhite}
           alt="Drop Down Button"
@@ -103,14 +98,14 @@ const Navigation = ({
   const renderNonAuthorizedUsers = () => {
     return screenWidth > 498 ? (
       <>
-        <Link to="/" className={navigationHeader__homeClassName}>
+        <Link to="/" className={navigation__homeClassName}>
           Home
         </Link>
         <button
-          className="navigationHeader__signInButton"
+          className="navigation__signInButton"
           onClick={handleSignInButtonClick}
         >
-          <span className="navigationHeader__signInButtonText">Sign In</span>
+          <span className="navigation__signInButtonText">Sign In</span>
         </button>
       </>
     ) : (
