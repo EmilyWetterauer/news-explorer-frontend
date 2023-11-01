@@ -10,10 +10,11 @@
 
 .savedNews__newsCardsContainer {
   display: flex;
-  max-width: 100%;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -31,5 +32,6 @@
     justify-content: center;
     margin-top: 15px;
     min-height: 100vh;
+    min-width: 288px;
   }
 }

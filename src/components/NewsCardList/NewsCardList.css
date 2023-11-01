@@ -4,6 +4,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  background-color: #f5f6f7;
 }
 
 .newsCardList__header {

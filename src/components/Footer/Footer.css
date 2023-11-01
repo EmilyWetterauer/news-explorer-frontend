@@ -62,7 +62,7 @@
 @media screen and (max-width: 498px) {
   .footer__rightSideContainer {
     width: 90%;
-    margin: 0px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     align-items: flex-start;
   }
 }
