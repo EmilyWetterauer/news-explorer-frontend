@@ -27,7 +27,7 @@ const SavedNewsHeader = ({ USER, keyword, savedArticles }) => {
 
   const renderSavedNewsHeader = () => {
     return (
-      <div className="savedNewsHeader__container">
+      <section className="savedNewsHeader__container">
         <div className="savedNewsHeader__contentContainer">
           <p className="savedNewsHeader__title">Saved articles</p>
           <h1 className="savedNewsHeader__titleName">
@@ -37,7 +37,7 @@ const SavedNewsHeader = ({ USER, keyword, savedArticles }) => {
             By keywords: {getKeywords()}
           </p>
         </div>
-      </div>
+      </section>
     );
   };
 

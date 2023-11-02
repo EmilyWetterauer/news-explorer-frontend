@@ -14,7 +14,7 @@ const SavedNews = ({
   keyword,
 }) => {
   return (
-    <div className="savedNews__container">
+    <section className="savedNews__container">
       <div className="savedNews__newsCardsContainer">
         {savedArticles.map((result) => {
           const uniqueKey = result.source._id + result.url;
@@ -34,7 +34,7 @@ const SavedNews = ({
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

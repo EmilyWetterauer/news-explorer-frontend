@@ -23,7 +23,7 @@ const NewsCardList = ({
   };
 
   return (
-    <div className="newsCardList__container">
+    <section className="newsCardList__container">
       <h2 className="newsCardList__header">Search Results</h2>
       <ul className="newsCardList__newsCardsContainer">
         {searchResults.map((result, index) => {
@@ -56,7 +56,7 @@ const NewsCardList = ({
           Show more
         </button>
       )}
-    </div>
+    </section>
   );
 };
 

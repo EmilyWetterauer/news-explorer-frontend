@@ -177,7 +177,7 @@ const Main = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <div className="main__backgroundImage">
+            <section className="main__backgroundImage">
               <Header
                 handleSignInButtonClick={handleSignInButtonClick}
                 isLoggedIn={isLoggedIn}
@@ -192,7 +192,7 @@ const Main = () => {
                 handleSearchButtonSubmit={handleSearchButtonSubmit}
                 showError={showError}
               />
-            </div>
+            </section>
             {errorMessage && (
               <p className="main__serverErrorMessage">{errorMessage}</p>
             )}
