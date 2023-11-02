@@ -40,6 +40,16 @@
   padding: 0px;
 }
 
+.newsCardList__newsCardListItem {
+  list-style-type: none;
+
+  background-color: #fff;
+  height: 576px;
+  flex: 0 1 calc(33.33% - 10px);
+  border-radius: 10px;
+  position: relative;
+}
+
 .newsCardList__showMoreButton {
   color: #1a1b22;
   font-family: Roboto, sans-serif;

@@ -32,17 +32,19 @@ const NewsCardList = ({
           }
           const uniqueKey = result.source.id + result.url;
           return (
-            <NewsCard
-              card={result}
-              key={uniqueKey}
-              isLoggedIn={isLoggedIn}
-              setSearchResults={setSearchResults}
-              handleSignInButtonClick={handleSignInButtonClick}
-              USER={USER}
-              savedArticles={savedArticles}
-              setSavedArticles={setSavedArticles}
-              keyword={keyword}
-            />
+            <li className="newsCardList__newsCardListItem">
+              <NewsCard
+                card={result}
+                key={uniqueKey}
+                isLoggedIn={isLoggedIn}
+                setSearchResults={setSearchResults}
+                handleSignInButtonClick={handleSignInButtonClick}
+                USER={USER}
+                savedArticles={savedArticles}
+                setSavedArticles={setSavedArticles}
+                keyword={keyword}
+              />
+            </li>
           );
         })}
       </ul>

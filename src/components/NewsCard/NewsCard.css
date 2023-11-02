@@ -1,9 +1,9 @@
 .newsCard__cardContainer {
-  background-color: #fff;
+  /* background-color: #fff;
   height: 576px;
   flex: 0 1 calc(33.33% - 10px);
   border-radius: 10px;
-  position: relative;
+  position: relative; */
 }
 
 @media screen and (max-width: 768px) {
