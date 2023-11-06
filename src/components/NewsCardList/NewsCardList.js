@@ -23,7 +23,7 @@ const NewsCardList = ({
   };
 
   return (
-    <section className="newsCardList__container">
+    <section className="newsCardList">
       <h2 className="newsCardList__header">Search Results</h2>
       <ul className="newsCardList__newsCardsContainer">
         {searchResults.map((result, index) => {
@@ -32,19 +32,17 @@ const NewsCardList = ({
           }
           const uniqueKey = result.source.id + result.url;
           return (
-            <li className="newsCardList__newsCardListItem">
-              <NewsCard
-                card={result}
-                key={uniqueKey}
-                isLoggedIn={isLoggedIn}
-                setSearchResults={setSearchResults}
-                handleSignInButtonClick={handleSignInButtonClick}
-                USER={USER}
-                savedArticles={savedArticles}
-                setSavedArticles={setSavedArticles}
-                keyword={keyword}
-              />
-            </li>
+            <NewsCard
+              card={result}
+              key={uniqueKey}
+              isLoggedIn={isLoggedIn}
+              setSearchResults={setSearchResults}
+              handleSignInButtonClick={handleSignInButtonClick}
+              USER={USER}
+              savedArticles={savedArticles}
+              setSavedArticles={setSavedArticles}
+              keyword={keyword}
+            />
           );
         })}
       </ul>

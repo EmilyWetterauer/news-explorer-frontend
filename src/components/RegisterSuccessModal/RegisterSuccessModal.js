@@ -16,21 +16,23 @@ const RegisterSuccessModal = ({ onClose, handleSignInButtonClick }) => {
   }, [onClose]);
 
   return (
-    <PopupWithForm
-      onClose={onClose}
-      formSize="extraSmall"
-      formTitle="registerSuccess"
-      formCloseButton="registerSuccess"
-      title="Registration successfully completed!"
-      buttonLabel="Sign in"
-    >
-      <button
-        className="registerSuccessModal__signInLink"
-        onClick={handleSignInButtonClick}
+    <div className="registerSuccessModal">
+      <PopupWithForm
+        onClose={onClose}
+        formSize="extraSmall"
+        formTitle="registerSuccess"
+        formCloseButton="registerSuccess"
+        title="Registration successfully completed!"
+        buttonLabel="Sign in"
       >
-        Sign in
-      </button>
-    </PopupWithForm>
+        <button
+          className="registerSuccessModal__signInLink"
+          onClick={handleSignInButtonClick}
+        >
+          Sign in
+        </button>
+      </PopupWithForm>
+    </div>
   );
 };
 

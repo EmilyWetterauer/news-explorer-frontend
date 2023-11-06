@@ -31,7 +31,7 @@ const PopupWithForm = ({
   };
 
   return (
-    <div className="popupWithForm__wrapper" onClick={onClose}>
+    <div className="popupWithForm" onClick={onClose}>
       <form className={`popupWithForm__form ${formSize}`}>
         <h1 className={`popupWithForm__title ${formTitle}`}>{title}</h1>
         <button

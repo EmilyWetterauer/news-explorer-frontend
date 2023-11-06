@@ -1,4 +1,4 @@
-.registerModal__emailLabel {
+.registerModal__label {
   width: 360px;
   height: 14px;
   color: #2f71e5;
@@ -9,13 +9,13 @@
 }
 
 @media screen and (max-width: 498px) {
-  .registerModal__emailLabel {
+  .registerModal__label {
     width: 90%;
     margin-bottom: 0px;
   }
 }
 
-.registerModal__emailField {
+.registerModal__inputField {
   width: 360px;
   height: 14px;
   font-family: Inter, sans-serif;
@@ -29,109 +29,17 @@
   outline: none;
 }
 
-.registerModal__emailField:focus {
+.registerModal__inputField:focus {
   border-color: #000;
 }
 
-.registerModal__emailField::placeholder {
+.registerModal__inputField::placeholder {
   opacity: 20%;
 }
 
 @media screen and (max-width: 498px) {
-  .registerModal__emailField {
+  .registerModal__inputField {
     width: 90%;
     margin-bottom: 20px;
-  }
-}
-
-.registerModal__passwordLabel {
-  width: 360px;
-  height: 14px;
-  color: #2f71e5;
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 498px) {
-  .registerModal__passwordLabel {
-    width: 90%;
-    margin-bottom: 0px;
-  }
-}
-
-.registerModal__passwordField {
-  width: 360px;
-  height: 14px;
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 35px;
-  padding-bottom: 7px;
-  outline: none;
-}
-
-.registerModal__passwordField:focus {
-  border-color: #000;
-}
-
-.registerModal__passwordField::placeholder {
-  opacity: 20%;
-}
-
-@media screen and (max-width: 498px) {
-  .registerModal__passwordField {
-    width: 90%;
-    margin-bottom: 10px;
-  }
-}
-
-.registerModal__userNameLabel {
-  width: 360px;
-  height: 14px;
-  color: #2f71e5;
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 498px) {
-  .registerModal__userNameLabel {
-    width: 90%;
-    display: none;
-  }
-}
-
-.registerModal__userNameField {
-  width: 360px;
-  height: 14px;
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-  border: none;
-  margin-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 7px;
-  outline: none;
-}
-
-.registerModal__userNameField:focus {
-  border-color: #000;
-}
-
-.registerModal__userNameField::placeholder {
-  opacity: 20%;
-}
-
-@media screen and (max-width: 498px) {
-  .registerModal__userNameField {
-    width: 90%;
-    display: none;
   }
 }

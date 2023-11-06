@@ -6,7 +6,7 @@ import imageNotFoundFrowningFace from "../../images/not-found_v1.svg";
 
 const NothingFound = () => {
   return (
-    <div className="nothingFound__container">
+    <div className="nothingFound">
       <div className="nothingFound__contentContainer">
         <img
           className="nothingFound__image"

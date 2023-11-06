@@ -1,4 +1,4 @@
-.savedNewsHeader__container {
+.savedNewsHeader {
   height: 300px;
   width: 100%;
   background-color: #fff;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 498px) {
-  .savedNewsHeader__container {
+  .savedNewsHeader {
     height: 205px;
   }
 }

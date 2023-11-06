@@ -27,7 +27,7 @@ const SavedNewsHeader = ({ USER, keyword, savedArticles }) => {
 
   const renderSavedNewsHeader = () => {
     return (
-      <section className="savedNewsHeader__container">
+      <section className="savedNewsHeader">
         <div className="savedNewsHeader__contentContainer">
           <p className="savedNewsHeader__title">Saved articles</p>
           <h1 className="savedNewsHeader__titleName">

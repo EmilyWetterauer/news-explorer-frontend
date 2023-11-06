@@ -42,7 +42,7 @@ const DropDownModal = ({
     isSavedNews && screenWidth > 498 ? homeNewsIcon : savedNewsIcon;
 
   return isLoggedIn ? (
-    <div className="dropDownModal__wrapper" onClick={onClose}>
+    <div className="dropDownModal" onClick={onClose}>
       <div className="dropDownModal__container">
         <div className="dropDownModal__header">
           <Link

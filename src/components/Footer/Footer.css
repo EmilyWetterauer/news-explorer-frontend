@@ -1,4 +1,4 @@
-.footer__container {
+.footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 498px) {
-  .footer__container {
+  .footer {
     flex-direction: column-reverse;
   }
 }
@@ -27,6 +27,15 @@
   .footer__leftSideContainer {
     margin-left: 40px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .footer__leftSideContainer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290.16px;
   }
 }
 

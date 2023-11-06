@@ -1,46 +1,33 @@
-.newsCard__cardContainer {
-  /* background-color: #fff;
+.newsCard {
   height: 576px;
-  flex: 0 1 calc(33.33% - 10px);
+  flex-basis: calc(33.33% - 10px);
+  list-style-type: none;
+  position: relative;
+}
+
+.newsCard__cardContainer {
+  background-color: #fff;
+  height: 576px;
   border-radius: 10px;
-  position: relative; */
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
   .newsCard__cardContainer {
     height: 420px;
-    min-width: 150px;
   }
 }
 
-@media screen and (max-width: 560px) {
-  .newsCard__cardContainer {
-    min-width: 140px;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .newsCard__cardContainer {
-    min-width: 130px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .newsCard__cardContainer {
-    min-width: 120px;
-  }
-}
-
-@media screen and (max-width: 498px) {
-  .newsCard__cardContainer {
-    height: 440px;
-    flex: 1;
+@media screen and (max-width: 768px) {
+  .newsCard {
+    flex-basis: calc(50% - 10px);
+    height: 420px;
   }
 }
 
 @media screen and (max-width: 460px) {
-  .newsCard__cardContainer {
-    min-width: 288px;
+  .newsCard {
+    flex-basis: 100%;
   }
 }
 
@@ -223,8 +210,6 @@
 @media screen and (max-width: 768px) {
   .newsCard__headerText {
     height: 72px;
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 22px;
     line-height: 24px;
   }
@@ -233,8 +218,6 @@
 @media screen and (max-width: 498px) {
   .newsCard__headerText {
     height: 48px;
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 22px;
     line-height: 24px;
   }
@@ -246,12 +229,18 @@
   display: inline-block;
   line-height: 16px;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #1a1b22;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__paragraphText {
+    -webkit-line-clamp: 4;
+  }
 }
 
 @media screen and (max-width: 498px) {
@@ -261,7 +250,7 @@
     display: inline-block;
     line-height: 16px;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
 }
@@ -272,10 +261,18 @@
   font-weight: 700;
   font-size: 16px;
   color: #b6bcbf;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0px;
+  padding-top: 16px;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
 }
 
-@media screen and (max-width: 498px) {
+@media screen and (max-width: 768px) {
   .newsCard__footerText {
-    margin-top: 0px;
+    width: 144.34px;
   }
 }

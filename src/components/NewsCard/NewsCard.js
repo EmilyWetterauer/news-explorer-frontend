@@ -64,62 +64,64 @@ const NewsCard = ({
   };
 
   return (
-    <article className="newsCard__cardContainer">
-      <div
-        className="newsCard__imageContainer"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        {isLoggedIn && isSaved && (
-          <div className="newsCard__keywordLabel">
-            <p className="newsCard__keywordLableText">{card.keyword}</p>
+    <li className="newsCard">
+      <article className="newsCard__cardContainer">
+        <div
+          className="newsCard__imageContainer"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {isLoggedIn && isSaved && (
+            <div className="newsCard__keywordLabel">
+              <p className="newsCard__keywordLableText">{card.keyword}</p>
+            </div>
+          )}
+          <div className="newsCard__imageSaveButtonContainer">
+            <div
+              className={newsCard__imageSaveButtonClassName}
+              onClick={handleSaveClick}
+            >
+              {!isLoggedIn && isHovered && (
+                <button
+                  className="newsCard__signInButton"
+                  onClick={handleSignInButtonClick}
+                >
+                  Sign in to save articles
+                </button>
+              )}
+              {isLoggedIn && isSaved && isHovered && (
+                <button
+                  className="newsCard__signInButton"
+                  onClick={handleSaveClick}
+                >
+                  Remove from saved
+                </button>
+              )}
+            </div>
           </div>
-        )}
-        <div className="newsCard__imageSaveButtonContainer">
-          <div
-            className={newsCard__imageSaveButtonClassName}
-            onClick={handleSaveClick}
-          >
-            {!isLoggedIn && isHovered && (
-              <button
-                className="newsCard__signInButton"
-                onClick={handleSignInButtonClick}
-              >
-                Sign in to save articles
-              </button>
-            )}
-            {isLoggedIn && isSaved && isHovered && (
-              <button
-                className="newsCard__signInButton"
-                onClick={handleSaveClick}
-              >
-                Remove from saved
-              </button>
-            )}
-          </div>
+          <img
+            className="newsCard__image"
+            src={card.urlToImage}
+            alt="searched news topic"
+          ></img>
         </div>
-        <img
-          className="newsCard__image"
-          src={card.urlToImage}
-          alt="searched news topic"
-        ></img>
-      </div>
-      <div className="newsCard__textContainer">
-        <p className="newsCard__dateText" type="text">
-          {formattedDate}
-        </p>
+        <div className="newsCard__textContainer">
+          <p className="newsCard__dateText" type="text">
+            {formattedDate}
+          </p>
 
-        <h2 className="newsCard__headerText" type="text">
-          {card.title}
-        </h2>
-        <p className="newsCard__paragraphText" type="text">
-          {card.description}
-        </p>
-        <p className="newsCard__footerText" type="text">
-          {card.source.name.toUpperCase()}
-        </p>
-      </div>
-    </article>
+          <h2 className="newsCard__headerText" type="text">
+            {card.title}
+          </h2>
+          <p className="newsCard__paragraphText" type="text">
+            {card.description}
+          </p>
+          <p className="newsCard__footerText" type="text">
+            {card.source.name.toUpperCase()}
+          </p>
+        </div>
+      </article>
+    </li>
   );
 };
 

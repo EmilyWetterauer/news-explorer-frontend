@@ -1,4 +1,4 @@
-.searchForm__container {
+.searchForm {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -7,13 +7,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .searchForm__container {
+  .searchForm {
     height: 336px;
   }
 }
 
 @media screen and (max-width: 498px) {
-  .searchForm__container {
+  .searchForm {
     height: 480px;
   }
 }

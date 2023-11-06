@@ -10,7 +10,7 @@ import facebookIcon from "../../images/fb.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer__container">
+    <footer className="footer">
       <div className="footer__leftSideContainer">
         <a
           href="https://newsapi.org/"

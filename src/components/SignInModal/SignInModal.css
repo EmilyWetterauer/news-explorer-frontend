@@ -1,4 +1,4 @@
-.signInModal__emailLabel {
+.signInModal__label {
   width: 360px;
   height: 14px;
   color: #2f71e5;
@@ -9,13 +9,13 @@
 }
 
 @media screen and (max-width: 498px) {
-  .signInModal__emailLabel {
+  .signInModal__label {
     width: 90%;
     margin-bottom: 0px;
   }
 }
 
-.signInModal__emailInput {
+.signInModal__inputField {
   width: 360px;
   height: 14px;
   font-family: Inter, sans-serif;
@@ -29,68 +29,17 @@
   outline: none;
 }
 
-.signInModal__emailInput:focus {
+.signInModal__inputField:focus {
   border-color: #000;
 }
 
-.signInModal__emailInput::placeholder {
+.signInModal__inputField::placeholder {
   opacity: 20%;
 }
 
 @media screen and (max-width: 498px) {
-  .signInModal__emailInput {
+  .signInModal__inputField {
     width: 90%;
     margin-bottom: 20px;
-  }
-}
-
-.signInModal__passwordLabel {
-  width: 360px;
-  height: 14px;
-  color: #2f71e5;
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 498px) {
-  .signInModal__passwordLabel {
-    width: 90%;
-    margin-bottom: 0px;
-  }
-}
-
-.signInModal__passwordInput {
-  width: 360px;
-  height: 14px;
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 40px;
-  padding-bottom: 7px;
-  outline: none;
-}
-
-.signInModal__passwordInput:focus {
-  border-color: #000;
-}
-
-@media screen and (max-width: 498px) {
-  .signInModal__passwordInput {
-    margin-bottom: 10px;
-  }
-}
-
-.signInModal__passwordInput::placeholder {
-  opacity: 20%;
-}
-
-@media screen and (max-width: 498px) {
-  .signInModal__passwordInput {
-    width: 90%;
   }
 }

@@ -168,13 +168,12 @@ const Main = () => {
     setActiveModal("");
   };
 
-  const mainWrapperClass = activeModal
-    ? "main__wrapper main__wrapperFixed"
-    : "main__wrapper";
+  const mainWrapperClass = activeModal ? "main main__fixed" : "main";
 
   return (
-    <div className={mainWrapperClass}>
-      <BrowserRouter>
+    // <>
+    <BrowserRouter>
+      <main className={mainWrapperClass}>
         <Switch>
           <Route exact path="/">
             <section className="main__backgroundImage">
@@ -242,43 +241,44 @@ const Main = () => {
             ></SavedNews>
           </Route>
         </Switch>
+        {/* </BrowserRouter> */}
+      </main>
+      <Footer />
 
-        <Footer />
+      {activeModal === "dropDown" && screenWidth <= 498 && (
+        <DropDownModal
+          screenWidth={screenWidth}
+          isLoggedIn={isLoggedIn}
+          onClose={closeAllModals}
+          handleSignInButtonClick={handleSignInButtonClick}
+          handleLogout={handleLogout}
+          handleSavedArticlesClick={handleSavedArticlesClick}
+        ></DropDownModal>
+      )}
 
-        {activeModal === "dropDown" && screenWidth <= 498 && (
-          <DropDownModal
-            screenWidth={screenWidth}
-            isLoggedIn={isLoggedIn}
-            onClose={closeAllModals}
-            handleSignInButtonClick={handleSignInButtonClick}
-            handleLogout={handleLogout}
-            handleSavedArticlesClick={handleSavedArticlesClick}
-          ></DropDownModal>
-        )}
-
-        {activeModal === "register" && (
-          <RegisterModal
-            onClose={closeAllModals}
-            handleAlternateButtonClick={handleSignInButtonClick}
-            handleSubmit={handleRegisterSubmit}
-          />
-        )}
-        {activeModal === "signIn" && (
-          <SignInModal
-            onClose={closeAllModals}
-            handleSignInButtonClick={handleSignInButtonClick}
-            handleAlternateButtonClick={handleRegisterClick}
-            handleSubmit={handleSignInSubmit}
-          />
-        )}
-        {activeModal === "registerSuccess" && (
-          <RegisterSuccessModal
-            onClose={closeAllModals}
-            handleSignInButtonClick={handleSignInButtonClick}
-          />
-        )}
-      </BrowserRouter>
-    </div>
+      {activeModal === "register" && (
+        <RegisterModal
+          onClose={closeAllModals}
+          handleAlternateButtonClick={handleSignInButtonClick}
+          handleSubmit={handleRegisterSubmit}
+        />
+      )}
+      {activeModal === "signIn" && (
+        <SignInModal
+          onClose={closeAllModals}
+          handleSignInButtonClick={handleSignInButtonClick}
+          handleAlternateButtonClick={handleRegisterClick}
+          handleSubmit={handleSignInSubmit}
+        />
+      )}
+      {activeModal === "registerSuccess" && (
+        <RegisterSuccessModal
+          onClose={closeAllModals}
+          handleSignInButtonClick={handleSignInButtonClick}
+        />
+      )}
+    </BrowserRouter>
+    // </>
   );
 };
 

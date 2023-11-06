@@ -13,7 +13,7 @@ const SearchForm = ({ handleSearchButtonSubmit, showError }) => {
   };
 
   return (
-    <form className="searchForm__container" onSubmit={handleSubmit}>
+    <form className="searchForm" onSubmit={handleSubmit}>
       <div className="searchForm__textContainer">
         <h1 className="searchForm__headerQuestion">
           What's going on in the world?

@@ -31,7 +31,7 @@ const Header = ({
       : `${header__titleClassName}`;
 
   return (
-    <header className="header__container">
+    <header className="header">
       <nav className="header__leftSideContainer">
         {/* <nav> */}
         <Link to="/" className={header__titleClassName_hide}>

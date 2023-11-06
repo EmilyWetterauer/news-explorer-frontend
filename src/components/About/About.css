@@ -1,4 +1,4 @@
-.about__container {
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 498px) {
-  .about__container {
+  .about {
     flex-direction: column;
   }
 }

@@ -1,4 +1,4 @@
-.savedNews__container {
+.savedNews {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -17,6 +17,7 @@
   margin-right: 10px;
   flex-wrap: wrap;
   gap: 10px;
+  padding-left: 0px;
 }
 
 @media screen and (max-width: 768px) {

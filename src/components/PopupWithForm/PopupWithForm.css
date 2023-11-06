@@ -1,4 +1,4 @@
-.popupWithForm__wrapper {
+.popupWithForm {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 498px) {
-  .popupWithForm__wrapper {
+  .popupWithForm {
     top: 45px;
     background-color: #fff;
     height: 100vh;
