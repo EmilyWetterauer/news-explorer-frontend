@@ -1,0 +1,116 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 498px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+.about__avatarImage {
+  height: 20vw;
+  width: 20vw;
+  background-color: blueviolet;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .about__avatarImage {
+    height: 30vw;
+    width: 30vw;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .about__avatarImage {
+    height: 85vw;
+    width: 85vw;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+.about__textContainer {
+  width: 45vw;
+  margin-right: 100px;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    margin-left: 20px;
+    width: 60vw;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .about__textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    width: 90%;
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+.about__headerText {
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  color: #1a1b22;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .about__headerText {
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .about__headerText {
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.about__paragraphText {
+  width: 100%;
+  color: #1a1b22;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__paragraphText {
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .about__paragraphText {
+    margin: 0px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}

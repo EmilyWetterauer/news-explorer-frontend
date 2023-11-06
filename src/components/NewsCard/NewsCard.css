@@ -1,0 +1,278 @@
+.newsCard {
+  height: 576px;
+  flex-basis: calc(33.33% - 10px);
+  list-style-type: none;
+  position: relative;
+}
+
+.newsCard__cardContainer {
+  background-color: #fff;
+  height: 576px;
+  border-radius: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__cardContainer {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard {
+    flex-basis: calc(50% - 10px);
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .newsCard {
+    flex-basis: 100%;
+  }
+}
+
+.newsCard__imageContainer {
+  height: 272px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__imageContainer {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .newsCard__imageContainer {
+    height: 196px;
+  }
+}
+
+.newsCard__signInButton {
+  position: absolute;
+  margin-top: 0px;
+  top: 1px;
+  right: 44px;
+  z-index: 1;
+  width: 182px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding-right: 10px;
+  background-color: orange;
+}
+
+.newsCard__signInButton:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__signInButton {
+    width: 164px;
+    top: 0px;
+  }
+}
+
+.newsCard__imageSaveButtonContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.newsCard__imageSaveButtonContainer:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__imageSaveButtonContainer {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.newsCard__imageSaveButton {
+  background-image: url("../../images/bookmark.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}
+
+.newsCard__imageSaveButton:hover {
+  background-image: url("../../images/Group\ 14.svg");
+  height: 40px;
+  width: 40px;
+}
+
+.newsCard__imageSaveButtonIsLiked {
+  background-image: url("../../images/bookmarkMarked.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}
+
+.newsCard__imageTrashCanButton {
+  background-image: url("../../images/grayTrash.svg");
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  background-position: center;
+}
+
+.newsCard__keywordLabel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  width: 87px;
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__keywordLabel {
+    top: 8px;
+    left: 8px;
+  }
+}
+
+.newsCard__keywordLableText {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.newsCard__image {
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.newsCard__textContainer {
+  overflow-wrap: break-word;
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.newsCard__textContainer:hover {
+  cursor: pointer;
+}
+
+.newsCard__dateText {
+  height: 24px;
+  color: #b6bcbf;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.newsCard__headerText {
+  height: 60px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #1a1b22;
+  margin: 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__headerText {
+    height: 72px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .newsCard__headerText {
+    height: 48px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.newsCard__paragraphText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__paragraphText {
+    -webkit-line-clamp: 4;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .newsCard__paragraphText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    line-height: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.newsCard__footerText {
+  height: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #b6bcbf;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0px;
+  padding-top: 16px;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard__footerText {
+    width: 144.34px;
+  }
+}

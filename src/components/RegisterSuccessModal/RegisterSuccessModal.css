@@ -1,0 +1,21 @@
+.registerSuccessModal__signInLink {
+  color: #2f71e5;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 350px;
+  background: none;
+  border: none;
+  text-align: start;
+  padding-left: 0px;
+}
+
+@media screen and (max-width: 498px) {
+  .registerSuccessModal__signInLink {
+    width: 90%;
+  }
+}
+
+.registerSuccessModal__signInLink:hover {
+  cursor: pointer;
+}

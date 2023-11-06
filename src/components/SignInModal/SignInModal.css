@@ -1,0 +1,45 @@
+.signInModal__label {
+  width: 360px;
+  height: 14px;
+  color: #2f71e5;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 498px) {
+  .signInModal__label {
+    width: 90%;
+    margin-bottom: 0px;
+  }
+}
+
+.signInModal__inputField {
+  width: 360px;
+  height: 14px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
+  padding-bottom: 7px;
+  outline: none;
+}
+
+.signInModal__inputField:focus {
+  border-color: #000;
+}
+
+.signInModal__inputField::placeholder {
+  opacity: 20%;
+}
+
+@media screen and (max-width: 498px) {
+  .signInModal__inputField {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

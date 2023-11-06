@@ -1,0 +1,161 @@
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 475px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm {
+    height: 336px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .searchForm {
+    height: 480px;
+  }
+}
+
+.searchForm__headerQuestion {
+  height: 128px;
+  width: 508px;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm__headerQuestion {
+    width: 385px;
+    height: 80px;
+    font-size: 36px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .searchForm__headerQuestion {
+    width: 285px;
+    height: 80px;
+    font-size: 36px;
+    margin-top: 0px;
+  }
+}
+
+.searchForm__statement {
+  height: 24px;
+  width: 608px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm__statement {
+    width: 452px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .searchForm__statement {
+    width: 288px;
+    height: 72px;
+  }
+}
+
+.searchForm__searchBarWrapper {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 498px) {
+  .searchForm__searchBarWrapper {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+}
+
+.searchForm__searchBar {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 588px;
+  height: 64px;
+  border-radius: 35px;
+  padding: 0px 0px 0px 20px;
+  border: 1px solid #d1d2d6;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm__searchBar {
+    width: 432px;
+    height: 56px;
+    padding: 0px 0px 0px 20px;
+    text-align: start;
+    color: #b6bcbf;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .searchForm__searchBar {
+    width: 288px;
+    height: 56px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.searchForm__searchBar {
+  outline: none;
+}
+
+.searchForm__searchBar::placeholder {
+  font-family: Roboto, sans-serif;
+}
+
+.searchForm__searchBarButton {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  border-radius: 35px;
+  width: 168px;
+  height: 66px;
+  background-color: #2f71e5;
+  border: none;
+  margin-left: -168px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm__searchBarButton {
+    width: 160px;
+    height: 58px;
+    margin-left: -160px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .searchForm__searchBarButton {
+    width: 288px;
+    height: 56px;
+    margin-left: 0px;
+  }
+}
+
+.searchForm__searchBarButton:hover {
+  background-color: #347eff;
+  cursor: pointer;
+  color: #fff;
+}
+
+.searchForm__searchBarButton:active {
+  background-color: #2a65cc;
+  color: #fff;
+}

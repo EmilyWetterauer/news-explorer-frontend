@@ -1,0 +1,133 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 498px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer__leftSideContainer {
+  display: flex;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b6bcbf;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__leftSideContainer {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .footer__leftSideContainer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290.16px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .footer__leftSideContainer {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+}
+
+.footer__newsApiLink {
+  text-decoration: none;
+  color: #b6bcbf;
+  margin-top: 0px;
+}
+
+.footer__rightSideContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__rightSideContainer {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .footer__rightSideContainer {
+    width: 90%;
+    margin: 15px 0px 0px 0px;
+    align-items: flex-start;
+  }
+}
+
+.footer__textLinks {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 498px) {
+  .footer__textLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .footer__rightTextListItem {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__rightTextLink {
+  color: #1a1b22;
+  font-family: Roboto, sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  width: 82px;
+  height: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 498px) {
+  .footer__rightTextLink {
+    margin: 40px 0px 40px 0px;
+  }
+}
+.footer__imageLinks {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 498px) {
+  .footer__imageLinks {
+    margin-left: auto;
+  }
+}
+
+.footer__rightImageLink {
+  margin-left: 20px;
+}
